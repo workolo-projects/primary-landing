@@ -92,3 +92,24 @@
     /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../../fonts/ttf/robotoregular.ttf")
       format("truetype");
 }
+.search-container {
+  position: relative;
+}
+
+.search-container input[type="text"] {
+  padding-left: 40px; /* Adjust according to the size of your icon */
+}
+
+.search-container::before {
+  content: "";
+  position: absolute;
+  right: 10px; /* Adjust according to your design */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust according to the size of your icon */
+  height: 20px; /* Adjust according to the size of your icon */
+  background-image: url('../img/search_104498.png'); /* Path to your search icon */
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Adjust opacity if needed */
+}
