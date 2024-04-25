@@ -92,6 +92,10 @@
     /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../../fonts/ttf/robotoregular.ttf")
       format("truetype");
 }
+body {
+  background-color: #FAFAFA;
+  width: 1920px;
+}
 .text-base {
   font-family: 'iranyekan', 'roboto', Arial, sans-serif;
   font-weight: normal; 
@@ -132,3 +136,35 @@
 .hover\:bg-custom-purple:hover {
   background-color: #7e0f9d; 
 }
+.right-side {
+  width: 268px; 
+  margin-right: 261px; 
+}
+
+.left-side {
+  margin-left: 245px; 
+  width: 998px; 
+  
+}
+
+.calender {
+  max-width: 1920px; 
+}
+
+.card {
+  width: 268px;
+} 
+
+img {
+  max-width: 998px; 
+  height: 437px; 
+}
+.tozihat{
+ width: 998px;
+}
+.last-line{
+  width: 998px;
+ }
+ .titr{
+  width: 998px;
+ }

@@ -2,7 +2,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'karjo-purple': '#8F11A6',
+      },
+    },
   },
   plugins: [],
 };
