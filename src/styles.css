@@ -96,10 +96,7 @@ body {
   background-color: #FAFAFA;
   width: 1920px;
 }
-.text-base {
-  font-family: 'iranyekan', 'roboto', Arial, sans-serif;
-  font-weight: normal; 
-}
+
 .text-gray-600 {
   font-family: 'iranyekan', Arial, sans-serif; 
   color: #4a5568; 
