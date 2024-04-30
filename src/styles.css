@@ -106,27 +106,12 @@ body {
   font-weight: bold; 
   color: #1a202c; 
 }
-.search-container {
-  position: relative;
+
+.gradient-background {
+  background-image: radial-gradient(circle,270deg, rgba(143, 17, 166, 0.10) 3.69%, rgba(143, 17, 166, 0.50) 50.04%, rgba(238, 228, 240, 0.1) 96.71%);
 }
 
-.search-container input[type="text"] {
-  padding-right: 40px; 
-}
 
-.search-container::before {
-  content: "";
-  position: absolute;
-  right: 10px; 
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px; 
-  height: 20px; 
-  background-image: url('../img/search_104498.png'); 
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.5; 
-}
 .bg-custom-purple {
   background-color: #8F11A6;
 }
