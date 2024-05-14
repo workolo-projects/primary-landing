@@ -260,5 +260,18 @@ img {
   video::-webkit-media-controls-current-time-display {
      display: none;
   }
+  
  }
+
+ [data-carousel-slide-to] {
+  background-color: #E5E3E6!important;
+}
+
+[data-carousel-slide-to][aria-current="true"] {
+  background-color: #6E0D80!important;
+}
+
+[data-carousel-slide-to][aria-current="true"]:hover {
+  background-color: #6E0D80!important;
+}
  
