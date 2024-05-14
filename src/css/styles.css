@@ -178,3 +178,15 @@ img {
 .custom-shadow-bottom {
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
 }
+
+[data-carousel-slide-to] {
+  background-color: #e5e3e6 !important;
+}
+
+[data-carousel-slide-to][aria-current="true"] {
+  background-color: #6e0d80 !important;
+}
+
+[data-carousel-slide-to][aria-current="true"]:hover {
+  background-color: #6e0d80 !important;
+}
