@@ -94,7 +94,7 @@
 }
 body {
   background-color: #FAFAFA;
-  width: 1920px;
+  max-width: 1920px;
 }
 
 .text-gray-600 {
