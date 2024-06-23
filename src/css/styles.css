@@ -226,3 +226,179 @@ img {
   max-width: 998px;
   max-height: 437px;
 }
+@layer base {
+  video::-webkit-media-controls {
+    display: none;
+  }
+  body {
+    background-color: #fafafa;
+    width: 1920px;
+  }
+
+  .text-gray-600 {
+    font-family: "iranyekan", Arial, sans-serif;
+    color: #4a5568;
+  }
+  .font-semibold.text-gray-900 {
+    font-family: "iranyekan", Arial, sans-serif;
+    font-weight: bold;
+    color: #1a202c;
+  }
+  .search-container {
+    position: relative;
+  }
+
+  video::-webkit-media-controls-play-button {
+    display: none;
+  }
+
+  video::-webkit-media-controls-volume-slider {
+    display: none;
+  }
+
+  video::-webkit-media-controls-mute-button {
+    display: none;
+  }
+
+  video::-webkit-media-controls-timeline {
+    display: none;
+  }
+
+  video::-webkit-media-controls-current-time-display {
+    display: none;
+  }
+  body {
+    background-color: #fafafa;
+    width: 1920px;
+  }
+  .text-base {
+    font-family: "iranyekan", "roboto", Arial, sans-serif;
+    font-weight: normal;
+  }
+
+  [data-carousel-slide-to] {
+    background-color: #e5e3e6 !important;
+  }
+
+  [data-carousel-slide-to][aria-current="true"] {
+    background-color: #6e0d80 !important;
+  }
+
+  [data-carousel-slide-to][aria-current="true"]:hover {
+    background-color: #6e0d80 !important;
+  }
+
+  .text-gray-600 {
+    font-family: "iranyekan", Arial, sans-serif;
+    color: #4a5568;
+  }
+  .font-semibold.text-gray-900 {
+    font-family: "iranyekan", Arial, sans-serif;
+    font-weight: bold;
+    color: #1a202c;
+    font-family: "iranyekan", Arial, sans-serif;
+    font-weight: bold;
+    color: #1a202c;
+  }
+  .search-container {
+    position: relative;
+  }
+
+  .gradient-background {
+    background-image: radial-gradient(
+      circle,
+      270deg,
+      rgba(143, 17, 166, 0.1) 3.69%,
+      rgba(143, 17, 166, 0.5) 50.04%,
+      rgba(238, 228, 240, 0.1) 96.71%
+    );
+  }
+
+  .bg-custom-purple {
+    background-color: #8f11a6;
+  }
+  .hover\:bg-custom-purple:hover {
+    background-color: #7e0f9d;
+  }
+
+  .calender {
+    max-width: 1920px;
+  }
+
+  img {
+    max-width: 998px;
+    max-height: 437px;
+    .text-base {
+      font-family: "iranyekan", "roboto", Arial, sans-serif;
+      font-weight: normal;
+    }
+    .text-gray-600 {
+      font-family: "iranyekan", Arial, sans-serif;
+      color: #4a5568;
+    }
+    .search-container {
+      position: relative;
+    }
+
+    .search-container input[type="text"] {
+      padding-right: 40px;
+    }
+
+    .search-container::before {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px; /* Adjust according to the size of your icon */
+      height: 20px; /* Adjust according to the size of your icon */
+      background-image: url("../img/search_104498.png"); /* Path to your search icon */
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.5; /* Adjust opacity if needed */
+    }
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/search_104498.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+  .bg-custom-purple {
+    background-color: #8f11a6;
+  }
+  .hover\:bg-custom-purple:hover {
+    background-color: #7e0f9d;
+  }
+}
+.right-side {
+  width: 268px;
+  margin-right: 261px;
+}
+
+.left-side {
+  margin-left: 245px;
+  width: 998px;
+}
+
+.calender {
+  max-width: 1920px;
+}
+
+.card {
+  width: 268px;
+}
+
+img {
+  max-width: 998px;
+  height: 437px;
+}
+.tozihat {
+  width: 998px;
+}
+.last-line {
+  width: 998px;
+}
+.titr {
+  width: 998px;
+}
