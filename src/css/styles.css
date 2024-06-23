@@ -190,3 +190,39 @@ img {
 [data-carousel-slide-to][aria-current="true"]:hover {
   background-color: #6e0d80 !important;
 }
+
+.text-gray-600 {
+  font-family: "iranyekan", Arial, sans-serif;
+  color: #4a5568;
+}
+.font-semibold.text-gray-900 {
+  font-family: "iranyekan", Arial, sans-serif;
+  font-weight: bold;
+  color: #1a202c;
+}
+
+.gradient-background {
+  background-image: radial-gradient(
+    circle,
+    270deg,
+    rgba(143, 17, 166, 0.1) 3.69%,
+    rgba(143, 17, 166, 0.5) 50.04%,
+    rgba(238, 228, 240, 0.1) 96.71%
+  );
+}
+
+.bg-custom-purple {
+  background-color: #8f11a6;
+}
+.hover\:bg-custom-purple:hover {
+  background-color: #7e0f9d;
+}
+
+.calender {
+  max-width: 1920px;
+}
+
+img {
+  max-width: 998px;
+  max-height: 437px;
+}
