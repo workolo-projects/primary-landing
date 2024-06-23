@@ -352,17 +352,11 @@ img {
       transform: translateY(-50%);
       width: 20px; /* Adjust according to the size of your icon */
       height: 20px; /* Adjust according to the size of your icon */
-      background-image: url("../img/search_104498.png"); /* Path to your search icon */
+      background-image: url("../img/search_104498.png");
       background-size: cover;
       background-repeat: no-repeat;
       opacity: 0.5; /* Adjust opacity if needed */
-    }
-    width: 20px;
-    height: 20px;
-    background-image: url("../img/search_104498.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5;
+
   }
   .bg-custom-purple {
     background-color: #8f11a6;
