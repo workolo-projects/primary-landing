@@ -4,11 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'karjo-purple': '#8F11A6',
+        "karjo-purple": "#8F11A6",
       },
     },
   },
-  plugins: [
-    require('flowbite/plugin')
- ]
-}
+  plugins: [require("flowbite/plugin")],
+};
