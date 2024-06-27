@@ -4,20 +4,16 @@
 
 :root {
   font-family: iranyekan, roboto, Arial !important;
-  /* Colors */
-  /* Fonts */
-  /* Effects */
+
   font-size: 16px;
   background-color: #fafafa;
   @layer utilities {
-    /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
-    /* Hide scrollbar for IE, Edge and Firefox */
     .no-scrollbar {
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;
+      scrollbar-width: none;
     }
   }
 }
@@ -28,11 +24,9 @@
   src: url("../../../../fonts/eot/iranyekanwebbold.eot");
   src: url("../../fonts/eot/iranyekanwebbold.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-8 */ url("../../fonts/woff2/iranyekanwebbold.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/ url("../../fonts/woff/iranyekanwebbold.woff")
-      format("woff"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-      url("../../fonts/ttf/iranyekanwebbold.ttf") format("truetype");
+    url("../../fonts/woff2/iranyekanwebbold.woff2") format("woff2"),
+    url("../../fonts/woff/iranyekanwebbold.woff") format("woff"),
+    url("../../fonts/ttf/iranyekanwebbold.ttf") format("truetype");
 }
 
 @font-face {
@@ -42,11 +36,9 @@
   src: url("../../fonts/eot/iranyekanweblight.eot");
   src: url("../../fonts/eot/iranyekanweblight.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-8 */ url("../../fonts/woff2/iranyekanweblight.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/
-      url("../../fonts/woff/iranyekanweblight.woff") format("woff"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-      url("../../fonts/ttf/iranyekanweblight.ttf") format("truetype");
+    url("../../fonts/woff2/iranyekanweblight.woff2") format("woff2"),
+    url("../../fonts/woff/iranyekanweblight.woff") format("woff"),
+    url("../../fonts/ttf/iranyekanweblight.ttf") format("truetype");
 }
 
 @font-face {
@@ -56,15 +48,10 @@
   src: url("../../fonts/eot/iranyekanwebregular.eot");
   src: url("../../fonts/eot/iranyekanwebregular.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-8 */ url("../../fonts/woff2/iranyekanwebregular.woff2")
-      format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/
-      url("../../fonts/woff/iranyekanwebregular.woff") format("woff"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-      url("../../fonts/ttf/iranyekanwebregular.ttf") format("truetype");
+    url("../../fonts/woff2/iranyekanwebregular.woff2") format("woff2"),
+    url("../../fonts/woff/iranyekanwebregular.woff") format("woff"),
+    url("../../fonts/ttf/iranyekanwebregular.ttf") format("truetype");
 }
-
-/* Latin fonts (Roboto) */
 
 @font-face {
   font-family: roboto;
@@ -72,11 +59,9 @@
   font-weight: bold;
   src: url("../../fonts/eot/robotobold.eot");
   src: url("../../fonts/eot/robotobold.eot?#iefix") format("embedded-opentype"),
-    /* IE6-8 */ url("../../fonts/woff2/robotobold.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/ url("../../fonts/woff/robotobold.woff")
-      format("woff"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../../fonts/ttf/robotobold.ttf")
-      format("truetype");
+    url("../../fonts/woff2/robotobold.woff2") format("woff2"),
+    url("../../fonts/woff/robotobold.woff") format("woff"),
+    url("../../fonts/ttf/robotobold.ttf") format("truetype");
 }
 
 @font-face {
@@ -85,11 +70,9 @@
   font-weight: 300;
   src: url("../../fonts/eot/robotolight.eot");
   src: url("../../fonts/eot/robotolight.eot?#iefix") format("embedded-opentype"),
-    /* IE6-8 */ url("../../fonts/woff2/robotolight.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/ url("../../fonts/woff/robotolight.woff")
-      format("woff"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../../fonts/ttf/robotolight.ttf")
-      format("truetype");
+    url("../../fonts/woff2/robotolight.woff2") format("woff2"),
+    url("../../fonts/woff/robotolight.woff") format("woff"),
+    url("../../fonts/ttf/robotolight.ttf") format("truetype");
 }
 
 @font-face {
@@ -99,11 +82,9 @@
   src: url("../../fonts/eot/robotoregular.eot");
   src: url("../../fonts/eot/robotoregular.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-8 */ url("../../fonts/woff2/robotoregular.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/ url("../../fonts/woff/robotoregular.woff")
-      format("woff"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../../fonts/ttf/robotoregular.ttf")
-      format("truetype");
+    url("../../fonts/woff2/robotoregular.woff2") format("woff2"),
+    url("../../fonts/woff/robotoregular.woff") format("woff"),
+    url("../../fonts/ttf/robotoregular.ttf") format("truetype");
 }
 body {
   background-color: #fafafa;
@@ -214,12 +195,12 @@ body {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px; /* Adjust according to the size of your icon */
-  height: 20px; /* Adjust according to the size of your icon */
-  background-image: url("../img/search_104498.png"); /* Path to your search icon */
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/search_104498.png");
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.5; /* Adjust opacity if needed */
+  opacity: 0.5;
 }
 
 .right-side {
