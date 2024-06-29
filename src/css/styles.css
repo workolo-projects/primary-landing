@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
   font-family: iranyekan, roboto, Arial !important;
 
@@ -229,4 +233,8 @@ img {
 }
 .titr {
   width: 998px;
+}
+#footerimg {
+  background-repeat: no-repeat;
+  background-size: contain, cover;
 }
