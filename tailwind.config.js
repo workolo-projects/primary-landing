@@ -1,12 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [],
   theme: {
-    extend: {
-      colors: {
-        "karjo-purple": "#8F11A6",
-      },
-    },
+    extend: {},
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [],
 };
