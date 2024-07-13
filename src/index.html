@@ -13,8 +13,8 @@
 
 <body>
   <!--nav-->
-  <nav class="bg-white lg:bg-[#FAFAFA] fixed w-full z-50 top-0" id="sticky-nav">
-    <div class="lg:flex items-center justify-between px-6 py-5 lg:py-4 lg:px-8">
+  <nav class="bg-white lg:bg-[#FAFAFA] fixed w-full z-50 top-0 border-b" id="sticky-nav">
+    <div class="flex items-center justify-between px-6 py-5 lg:py-4 lg:px-8 w-full">
       <div class="flex items-center">
         <div class="hidden lg:block">
           <a href="https://jobs.karjoo.plus/qazvin">
@@ -23,22 +23,22 @@
         </div>
         <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 lg:mr-16"
           id="navbar-sticky">
-          <ul class="flex text-[#403F40] text-base space-x-1">
-            <li class="px-6 py-3 ml-1">
+          <ul class="flex text-[#403F40] text-base">
+            <li class="px-3 py-3 ml-2 w-40">
               <a href="https://jobs.karjoo.plus/qazvin" target="_blank" target="_blank"
-                class="block py-3 px-3 lg:p-0">نمایشگاه کار</a>
+                class=" py-3 lg:p-0">نمایشگاه کار</a>
             </li>
-            <li class="px-6 py-3">
-              <a href="https://ats.karjoo.plus" target="_blank" class="block py-3 px-3  lg:p-0 ">داشبورد ATS</a>
+            <li class="px-3 py-3 w-40">
+              <a href="https://ats.karjoo.plus" target="_blank" class="py-3 lg:p-0 ">داشبورد ATS</a>
             </li>
-            <li class="px-6 py-3">
-              <a href="https://karjoo.plus/blog" target="_blank" class="block py-3 px-3  lg:p-0 ">اخبار و مقالات
+            <li class="py-3 w-40">
+              <a href="https://karjoo.plus/blog" target="_blank" class="py-3 lg:p-0 ">اخبار و مقالات
                 استخدام</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="flex justify-between items-center">
+      <div class="flex items-center w-2/3">
         <button data-collapse-toggle="menu" type="button" class="lg:hidden">
           <span class="sr-only">منو</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,6 +71,11 @@
           </div>
         </div> -->
       </div>
+      <div class="sm:hidden w-1/3 justify-end">
+        <a href="https://jobs.karjoo.plus/qazvin">
+          <img src="../img/kp.svg" alt="لوگو" />
+        </a>
+      </div>
     </div>
     <div class="justify-between lg:hidden w-96 h-[42.563rem] px-6 py-0" id="menu-links">
       <ul class="text-right text-sm leading-5">
@@ -90,9 +95,9 @@
   <main class="sm:flex sm:flex-col sm:mx-20">
 
     <!--banner-->
-    <div style="background-image:url(./../img/Backround.svg)"
+    <!-- <div style="background-image:url(./../img/Backround.svg)"
       class="w-full gradient-background bg-contain bg-center bg-no-repeat mt-8 mb-8 py-8 flex flex-col justify-center text-center items-center">
-      <!-- <div class="relative mt-6 sm:order-1 flex justify-center w-11/12 h-12 sm:w-3/5">
+      <div class="relative mt-6 sm:order-1 flex justify-center w-11/12 h-12 sm:w-3/5">
         <div class="absolute bottom-3 right-2 sm:right-4 sm:w-6 sm:h-6 w-5 h-5">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
             <path
@@ -108,7 +113,7 @@
         <button type="submit" id="btnClick"
           class="btn rounded-l-md p-2 sm:rounded-lg w-auto sm:px-16 sm:text-lg sm:px-18 bg-[#8F11A6] px-3.5 py-2.5 text-xs font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500">جست
           و جو</button>
-      </div> -->
+      </div>
       <div class="mt-10 flex flex-col justify-center items-center sm:w-auto sm:space-x-5 sm:text-base">
         <span class="font-bold  text-gray-900 sm:text-4xl text-xl">خدمات هوشمند استخدام و کاریابی</span>
         <div class="mt-4 flex items-center justify-center space-x-1">
@@ -117,13 +122,13 @@
           <div class="text-lg sm:text-xl text-[#8F11A6] font-bold leading-normal">کارجوپلاس</div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--banner-->
 
     <!--calender-->
-    <div class="sm:w-10/12 flex justify-center sm:mr-36 ">
-      <div class="calender flex sm:grid  sm:grid-cols-10 mb-6">
-        <div class="sm:col-span-3 flex-col items-start">
+    <div class="sm:w-11/12 flex justify-between m-auto px-auto md:my-32 my-20">
+      <div class="calender flex sm:grid sm:grid-cols-10 mb-6">
+        <div class="sm:col-span-3 flex-col items-start mx-auto">
           <ul role="list"
             class="divide-y divide-gray-100 hidden sm:col-span-1 sm:flex sm:place-items-start sm:flex-col">
             <li
@@ -237,25 +242,29 @@
           </div>
         </div>
         <div class="sm:col-span-7 flex flex-col items-center sm:items-start">
-          <!-- <div class="flex justify-center sm:hidden">
-            <h1 class="text-xs md:text-xl font-bold leading-7 pr-1.5 pl-28 pt-3 pb-2">تقویم نمایشگاه ها</h1>
-            <h2 class="text-sm font-medium leading-5 pl-1 pt-3 pb-2 text-[#8F11A6]">مشاهده همه</h2>
+          <div class="flex justify-center sm:hidden w-11/12">
+            <div class="w-1/2 flex justify-start">
+              <h1 class="text-lg md:text-xl font-bold leading-7 pt-3 pb-2">تقویم نمایشگاه ها</h1>
+          </div>
+          <div class="w-1/2 flex justify-end">
+            <h2 class="text-md font-medium leading-5 pl-1 pt-3 pb-2 text-[#8F11A6]">مشاهده همه</h2>
             <div class="pt-3 pb-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path d="M13.125 16.25L6.875 10L13.125 3.75" stroke="#8F11A6" stroke-width="1.5" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
             </div>
-          </div> -->
-          <div class="flex justify-center sm:hidden my-4">
+          </div>
+          </div>
+          <!-- <div class="flex justify-center sm:hidden my-4">
             <input style="background-image:url(./../img/chevron-down.png)"
               class="bg-no-repeat bg-[length:24px_24px] bg-left text-sm py-3.5 pr-4 pl-3 w-80 rounded-lg border-2 border-[#CCCBCC]"
               placeholder="نمایشگاه کار قزوین (23 اردیبهشت 1402)" />
+          </div> -->
+          <div class="flex flex-col w-11/12 sm:items-start">
+            <img class="w-full h-40 sm:h-full mb-10 rounded-2xl" src="./../img/DSC01176 1.png" />
           </div>
-          <div class="flex flex-col sm:w-11/12 sm:items-start">
-            <img class="w-80 sm:w-full h-40 sm:h-full mb-10" src="./../img/DSC01176 1.png" />
-          </div>
-          <div class="w-80 sm:w-11/12 h-9 justify-between items-start mb-5 inline-flex">
+          <div class="w-11/12 h-9 justify-between items-start mb-5 inline-flex">
             <div class="py-2 rounded-lg justify-center items-center gap-2.5 flex">
               <div class="text-neutral-700 text-base font-semibold ">تاریخ برگزاری: 23 اردیبهشت 1400</div>
             </div>
@@ -263,8 +272,8 @@
               <div class="text-neutral-700 text-base font-semibold "> شهر قزوین</div>
             </div>
           </div>
-          <div class="flex justify-start mb-6 sm:w-11/12 w-80 sm:h-auto">
-            <p class="text-base text-justify text-[#403F40] sm:leading-6 sm:font-normal  ">لورم ایپسوم متن ساختگی با
+          <div class="flex justify-start mb-6 w-11/12 sm:h-auto">
+            <p class="text-base text-justify text-[#403F40] sm:leading-6 sm:font-normal">لورم ایپسوم متن ساختگی با
               تولید
               سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم
               نامفهوم از صنعت چاپ، و بااستفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
@@ -280,7 +289,7 @@
           <div class="hidden flex sm:justify-start sm:w-11/12">
             <p class="text-[#403F40] text-lg font-bold flex justify-center sm:mb-4">شرکت های حاضر در این نمایشگاه</p>
           </div>
-          <div class="flex justify-between w-80 sm:w-11/12">
+          <div class="flex justify-between sm:w-11/12">
             <div class="hidden sm:flex sm:w-4/6">
               <img src="./../img/234bb1db-4451-4ff8-9649-328b060dea03 3.png" class="ml-2 w-12 h-12" />
               <img src="./../img/University_of_Tehran_logo 3.png" class="ml-2 w-12 h-12" />
@@ -290,13 +299,14 @@
               <img src="./../img/University_of_Tehran_logo 3.png" class="ml-2 w-12 h-12" />
               <p class="text-sm font-medium leading-5 pt-4">و ۲۰ شرکت دیگر</p>
             </div>
-            <div class="flex grid-cols-2">
+            <div class="flex w-full md:w-1/2">
               <button
-                class="flex items-center justify-center w-36 text-sm border text-[#8F11A6] rounded-lg border-[#8F11A6] py-3 px-6 h-12">ثبت
-                نام کارفرما</button>
-              <button
-                class="flex items-center justify-center w-40 text-sm bg-[#8F11A6] text-white border rounded-lg border-[#8F11A6] py-3 px-6 h-12 mr-2">مشاهدهآگهی
+                class="flex items-center justify-center font-medium md:w-1/2 w-48 bg-[#8F11A6] text-white border rounded-lg border-[#8F11A6] py-3 px-6 h-12 m-auto">مشاهدهآگهی
                 ها</button>
+                <div class="w-1/12 "></div>
+                 <button
+                class="flex items-center justify-center font-medium md:w-1/2 w-48 border text-[#8F11A6] rounded-lg border-[#8F11A6] py-3 px-6 h-12 m-auto">
+                رزرو غرفه نمایشگاه </button>
             </div>
           </div>
         </div>
@@ -305,16 +315,16 @@
     <!--calender-->
 
     <!--video-->
-    <div class="pt-[100px] w-11/12 m-auto">
+    <div class="w-11/12 m-auto my-20 md:mb-32 md:mt-10">
       <div>
-        <h1 class="text-center text-2xl lg:text-5xl  font-extrabold leading-7 lg:leading-10 text-[#403F40] lg:py-4">
+        <h1 class="text-center text-2xl lg:text-5xl font-extrabold leading-2 lg:leading-10 text-[#403F40] lg:py-4">
           استخدام در نمایشگاه کار</h1>
-        <p class="text-sm lg:text-xl text-center leading-7 font-medium pt-2 lg:pt-4">هر آنچه لازم است درباره ی نمایشگاه
+        <p class="text-sm lg:text-xl text-center leading-2 font-medium pt-2 lg:pt-4">هر آنچه لازم است درباره ی نمایشگاه
           کار و اتفاقاتی که در نمایشگاه می افتد بدانید</p>
       </div>
-      <div class="pt-8 lg:pt-24">
+      <div class="pt-8 lg:pt-12">
         <div class="relative">
-          <video class="rounded-3xl m-auto w-10/12" id="myVideo">
+          <video class="rounded-2xl m-auto md:w-[90%]" id="myVideo">
             <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
           </video>
           <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" id="play-pause">
@@ -330,7 +340,7 @@
 
     <!--karfarmayanATS-->
     <div
-      class="flex mb-20  flex-col items-center justify-center text-center m-auto w-full sm:w-10/12 sm:mt-28 sm:mb-40 mt-14">
+      class="flex my-24 flex-col items-center justify-center text-center m-auto w-full sm:w-10/12 md:my-32">
       <div class=" sm:w-auto flex flex-col items-center">
         <h1 class="text-xl sm:text-5xl font-bold sm:font-black -wide sm:mb-4 mb-2">راهکار مابرای کارفرمایان</h1>
         <h3 class="text-sm sm:text-xl font-normal sm:font-medium">سرویس جذب و استخدام (ATS)</h3>
@@ -454,7 +464,7 @@
     <!--karfarmayanATS-->
 
     <!--karfarma-->
-    <div class="z-0 mt-2 md:mt-40">
+    <div class="z-0 mt-2 my-24">
       <h1 class="text-center text-xl md:text-5xl font-bold md:font-extrabold my-3 leading-7 md:leading-10">مورد اعتماد
         بیش از <span class="text-[#8F11A6]">۴۰۰</span> برند کارفرمایی و <span class="text-[#8F11A6]">۲۰</span> نهاد
         دولتی</h1>
@@ -506,7 +516,7 @@
                       </div>
                     </div>
                     <div class="mt-4">
-                      <p class="text-[#403F40] 2xl:text-base text-sm font-medium"> لورم ایپسوم متن ساختگی با تولید سادگی
+                      <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی با تولید سادگی
                         نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
                         از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
                         چاپ. </p>
@@ -524,7 +534,7 @@
                       </div>
                     </div>
                     <div class="mt-6">
-                      <p class="text-[#403F40] 2xl:text-base text-sm font-medium"> لورم ایپسوم متن ساختگی با تولید سادگی
+                      <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی با تولید سادگی
                         نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
                         از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
                         چاپ. </p>
@@ -546,7 +556,7 @@
                         </div>
                       </div>
                       <div class="mt-6">
-                        <p class="text-[#403F40] 2xl:text-base text-sm font-medium"> لورم ایپسوم متن ساختگی با تولید
+                        <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی با تولید
                           سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی
                           نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی
                           نامفهوم از صنعت چاپ. </p>
@@ -564,7 +574,7 @@
                         </div>
                       </div>
                       <div class="mt-6">
-                        <p class="text-[#403F40] 2xl:text-base text-sm font-medium"> لورم ایپسوم متن ساختگی با تولید
+                        <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی با تولید
                           سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی
                           نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی
                           نامفهوم از صنعت چاپ. </p>
@@ -586,7 +596,7 @@
                           </div>
                         </div>
                         <div class="mt-6">
-                          <p class="text-[#403F40] 2xl:text-base text-sm font-medium"> لورم ایپسوم متن ساختگی با تولید
+                          <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی با تولید
                             سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
                             سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
                             سادگی نامفهوم از صنعت چاپ. </p>
@@ -604,7 +614,7 @@
                           </div>
                         </div>
                         <div class="mt-6">
-                          <p class="text-[#403F40] 2xl:text-base text-sm font-medium"> لورم ایپسوم متن ساختگی با تولید
+                          <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی با تولید
                             سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
                             سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
                             سادگی نامفهوم از صنعت چاپ. </p>
@@ -627,7 +637,7 @@
                             </div>
                           </div>
                           <div class="mt-6">
-                            <p class="text-[#403F40] 2xl:text-base text-sm font-medium"> لورم ایپسوم متن ساختگی با تولید
+                            <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی با تولید
                               سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
                               سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
                               سادگی نامفهوم از صنعت چاپ. </p>
@@ -646,7 +656,7 @@
                             </div>
                           </div>
                           <div class="mt-6">
-                            <p class="text-[#403F40] 2xl:text-base text-sm font-medium"> لورم ایپسوم متن ساختگی با تولید
+                            <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی با تولید
                               سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
                               سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
                               سادگی نامفهوم از صنعت چاپ. </p>
@@ -676,8 +686,8 @@
 
     <!--aboutus-->
     <div
-      class="flex flex-col sm:grid sm:grid-cols-6 sm:justify-items-start sm:content-start items-center sm:grid-flow-row sm:gap-4 m-auto md:my-40">
-      <div class="sm:col-span-5 sm:row-span-3 sm:mt-24 md:mr-36 m-auto">
+      class="flex flex-col sm:grid sm:grid-cols-6 sm:justify-items-start sm:content-start items-center sm:grid-flow-row sm:gap-4 m-auto my-24">
+      <div class="sm:col-span-5 sm:row-span-3 md:mr-36 m-auto">
         <div class="flex sm:flex-row flex-col sm:mb-14 mb-10 w-11/12 m-auto sm:ml-40">
           <h1 class="text-xl leading-7 sm:text-5xl sm:font-extrabold sm:ml-6 flex sm:justify-start justify-center">
             درباره استودیو کارجو پلاس</h1>
@@ -687,7 +697,7 @@
         </div>
         <div
           class="flex flex-col w-11/12 m-auto sm:ml-40 sm:items-start items-center sm:justify-center h-44 sm:h-24 sm:mb-11 mb-6">
-          <span class="text-base sm:text-xl font-semibold sm:font-bold sm:mb-4 mb-3 sm:mt-7">درباره ما</span>
+          <span class="text-lg sm:text-xl font-bold sm:mb-4 mb-3 sm:mt-7">درباره ما</span>
           <p
             class="text-base font-normal leading-6 text-justify h-36 text-ellipsis overflow-hidden sm:overflow-visible sm:w-full sm:pl-10 sm:h-24">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم
@@ -698,7 +708,7 @@
             نامفهوم از صنعت چاپ</p>
         </div>
         <div class="flex flex-col w-11/12 m-auto sm:ml-40 sm:items-start items-center sm:justify-center sm:mb-11 mb-6">
-          <span class="text-base sm:text-xl font-semibold sm:font-bold sm:mt-8 sm:mb-4 mb-3">ماموریت ما</span>
+          <span class="text-lg sm:text-xl font-bold sm:mt-8 sm:mb-4 mb-3">ماموریت ما</span>
           <p
             class="text-base font-normal leading-6 text-justify h-36 text-ellipsis overflow-hidden sm:overflow-visible sm:w-full sm:pl-10 sm:h-24">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم
@@ -780,7 +790,7 @@
           <p class="sm:text-lg text-base leading-6 font-semibold py-2">اگهی استخدام</p>
         </div>
       </div>
-      <h1 class="text-base sm:text-xl font-semibold sm:font-bold flex sm:justify-start justify-center mt-9 md:hidden">
+      <h1 class="text-lg sm:text-xl font-bold flex sm:justify-start justify-center mt-9 md:hidden">
         افتخارات تیم ما
       </h1>
       <div class="container mx-auto my-10">
@@ -808,7 +818,7 @@
     <!--aboutus-->
 
     <!-- rahkar -->
-    <div class="md:w-4/6 my-6 m-auto md:mt-32">
+    <div class="md:w-4/6 md:mb-32 m-auto my-24">
       <div class="text-center">
         <h1 class="text-xl md:text-4xl font-bold md:font-extrabold">
           دوره راهکار : آموزش با طعم تجربه
@@ -826,7 +836,7 @@
             محصول، برنامه نویسی وب و … برگزار می شود. نفرات برتر هر دوره به شرکت های معتبر معرفی خواهند شد.
           </p>
         </div>
-        <div class="font-sm md:hidden mt-6 mx-3">
+        <div class="font-sm md:hidden mt-6 mx-3 text-justify">
           <p> راه کار ایجاد شد تا به کسانی که در ابتدای مسیر شغلی خود هستند و یا کسانی که به دنبال ارتقا و یا تغییر
             مسیر
             شغلی خود هستند کمک کند. بوت کمپ هایراهکار به صورت پروژه محور و تخصصی با تدریس نفرات برتر هر حوزه و همراهی
@@ -899,7 +909,7 @@
     <!--rahkar-->
 
     <!--team-->
-    <div class="flex flex-col items-center mb-36 mt-16 sm:my-80">
+    <div class="flex flex-col items-center md:my-32 my-24">
       <h2 class="text-xl font-bold sm:font-extrabold sm:text-5xl mb-20 sm:mb-32">تیم کارجو پلاس</h2>
       <div
         class="grid grid-flow-row-dense grid-cols-2 sm:place-content-center sm:grid-cols-6 gap-y-12 gap-x-6 sm:gap-x-6 w-full">
@@ -987,7 +997,7 @@
     <!--team-->
 
     <!--article-->
-    <div class="md:w-11/12 m-auto my-6 md:mt-32">
+    <div class="md:w-11/12 m-auto md:my-32 my-24">
       <div class="text-right md:text-center flex md:block justify-between mx-2 md:mx-0">
         <h1 class="xs:text-sm sm:text-xl md:text-5xl font-bold md:font-extrabold">
           اخبار و مقالات استخدام
@@ -1114,7 +1124,7 @@
     <!--article-->
 
     <!--soalatemotedavel-->
-    <div class=" flex flex-col items-center justify-center mt-28 sm:mt-28">
+    <div class="flex flex-col items-center justify-center my-28 sm:my-28 ">
       <div class="flex flex-col items-center mb-6 sm:mb-20">
         <h1 class="text-xl sm:text-5xl font-bold sm:font-extrabold">پاسخ به سوالات متداول</h1>
         <h3 class="text-xs sm:text-sm font-normal w-80 sm:w-96 mt-2 sm:mt-3 text-center">هر آنچه که در مورد فرآیند
@@ -1228,8 +1238,8 @@
     <!--soalatemotedavel-->
 
     <!--permissision-->
-    <div class="md:w-11/12 m-auto my-6 md:mt-32">
-      <div class="text-center md:text-center  mx-2 md:mx-0">
+    <div class="md:w-11/12 m-auto my-20 md:my-24">
+      <div class="text-center md:text-center mx-2 md:mx-0">
         <h1 class="xs:text-sm sm:text-xl md:text-3xl font-bold md:font-extrabold mb-3">مجوزهای کسب شده کارجو پلاس</h1>
         <p class="text-xs text-gray-500">.هر آنچه که در مورد فرآیند استخدام و راهکار های هوشمند ما در مسیر انتشار آگهی و
           جذب نیرو باید بدانید</p>
@@ -1322,10 +1332,8 @@
   <!--footersection-->
 
   <!--copyright-->
-  <div class="w-64 h-12 relative flex w-full">
-    <span class="text-[#8F11A6] m-auto sm:text-2xl sm:font-extrabold text-sm font-semibold">
-      استودیو منابع انسانی کارجوپلاس
-    </span>
+  <div class="relative flex w-full my-2 justify-center">
+    <img src="./../img/Group.svg" alt=""/>
   </div>
   <!--copyright-->
 
