@@ -127,10 +127,10 @@
 
     <!--calender-->
     <div class="sm:w-11/12 flex justify-between m-auto px-auto md:my-32 my-20">
-      <div class="calender flex sm:grid sm:grid-cols-10 mb-6">
-        <div class="sm:col-span-3 flex-col items-start mx-auto">
+      <div class="calender calender-scroll-mobile flex sm:grid sm:grid-cols-10 mb-6">
+        <div class="sm:col-span-3 scroll-mobile-body flex-col w-full items-start mx-auto">
           <ul role="list"
-            class="divide-y divide-gray-100 hidden sm:col-span-1 sm:flex sm:place-items-start sm:flex-col">
+            class="divide-y overflow-x-auto overflow-y-hidden scroll-mobile divide-gray-100 hidden sm:col-span-1 sm:flex sm:place-items-start sm:flex-col">
             <li
               class="flex justify-between py-5 px-5 mb-9 border-2 divide-solid border-[#E5E3E5] w-64 h-20 rounded-2xl bg-[#FFF] ring-1 ring-[#E5E3E5] hover:ring-[#8F11A6]">
               <div class=" flex-col basis-40">
@@ -1274,11 +1274,17 @@
       <div class="hidden sm:flex sm:w-1/6 sm:ml-20">
         <img class="w-full h-full" src="./../img/hero.svg">
       </div>
+      <!-- links -->
       <div class="sm:absolute top-0 left-16 flex flex-row justify-center sm:gap-x-5 gap-x-12 my-7 ">
-        <a href="#" class="sm:order-1"><img src="./../img/instagram.png"></a>
-        <a href="#" class="sm:order-3"><img class="mt-1" src="./../img/telegram.png"></a>
-        <a href="#" class="sm:order-2"><img class="mt-1" src="./../img/Aparat.png"></a>
-        <a href="#" class="sm:order-4"><img src="./../img/linkedin.png"></a>
+        <!-- instagram -->
+        <a href="https://www.instagram.com/karjooplus?igsh=MTNvbjhjcHpucGV5MQ==" class="sm:order-1"><img
+            src="./../img/instagram.png"></a>
+        <!-- telegram -->
+        <a href="https://t.me/karjooplus_support" class="sm:order-3"><img class="mt-1" src="./../img/telegram.png"></a>
+        <!-- aparat -->
+        <a href="https://www.aparat.com/karjooplus" class="sm:order-2"><img class="mt-1" src="./../img/Aparat.png"></a>
+        <!-- linkedin -->
+        <a href="https://www.linkedin.com/company/karjooplus/" class="sm:order-4"><img src="./../img/linkedin.png"></a>
       </div>
       <div class="flex sm:flex-row flex-col gap-y-6 sm:w-4/5 ">
         <div class="sm:w-4/12 flex flex-col sm:order-1 order-0 ">
@@ -1311,17 +1317,19 @@
           <a href="#" class="mb-4  sm:mb-6 text-white text-sm font-normal ">وب اپ کارجو پلاس</a>
           <a href="#" class="mb-4  sm:mb-6 text-white text-sm font-normal whitespace-nowrap">ورود و ساخت رزومه
             کارجو</a>
-          <a href="#" class="mb-4  sm:mb-6 text-white text-sm font-normal whitespace-nowrap">لیست نمایشگاه های
+          <a href="https://karjoo.plus/blog/" class="mb-4  sm:mb-6 text-white text-sm font-normal whitespace-nowrap">لیست نمایشگاه های
             کار</a>
-          <a href="#" class="mb-4  sm:mb-6 text-white text-sm font-normal whitespace-nowrap">داشبورد ATS </a>
-          <a href="#" class="mb-4  sm:mb-6 text-white text-sm font-normal whitespace-nowrap">اخبار و مقالات
+          <a href="https://ats.karjoo.plus" class="mb-4  sm:mb-6 text-white text-sm font-normal whitespace-nowrap">داشبورد ATS </a>
+          <a href="https://karjoo.plus/blog" class="mb-4  sm:mb-6 text-white text-sm font-normal whitespace-nowrap">اخبار و مقالات
             استخدام</a>
         </div>
         <div class="sm:w-2/12 flex flex-col sm:ml-36">
           <p class="mb-4 sm:mb-6 text-white text-lg font-semibold ">ارتباط با ما</p>
-          <p class="mb-4 sm:mb-6 text-white text-sm font-normal whitespace-nowrap">ایمیل: hi@karjoo.plus.</p>
+          <p class="mb-4 sm:mb-6 text-white text-sm font-normal whitespace-nowrap">ایمیل: 
+            <a href="mailto:hi@karjoo.plus">hi@karjoo.plus</a>
+          </p>
           <p class="mb-4 sm:mb-6 text-white text-sm font-normal whitespace-nowrap">شماره تماس پشتیبانی:
-            ۰۲۱۴۵۱۹۵۰۰۰
+            <a href="tel:۰۲۱۴۵۱۹۵۰۰۰">۰۲۱-۴۵۱۹۵۰۰۰</a>
           </p>
           <p class="mb-4 sm:mb-6 text-white text-sm font-normal whitespace-nowrap">آدرس: قزوین، پارک علم و فناری
           </p>
