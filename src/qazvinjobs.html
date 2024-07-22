@@ -1,59 +1,97 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/outline/heroicons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css"
+    />
+    <title>کارجو +</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="./css/styles.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/outline/heroicons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
-  <title>کارجو +</title>
-</head>
-
-<body class="bg-white">
-  <!--nav-->
-  <nav class="bg-white lg:bg-[#FAFAFA] fixed w-full z-50 top-0" id="sticky-nav">
-    <div class="lg:flex items-center justify-between px-6 py-5 lg:py-4 lg:px-8">
-      <div class="flex items-center">
-        <div class="hidden lg:block">
-          <a href="https://jobs.karjoo.plus/qazvin">
-            <img src="../img/kp.svg" alt="لوگو" />
-          </a>
+  <body class="bg-white">
+    <!--nav-->
+    <nav
+      class="bg-white lg:bg-[#FAFAFA] fixed w-full z-50 top-0"
+      id="sticky-nav"
+    >
+      <div
+        class="lg:flex items-center justify-between px-6 py-5 lg:py-4 lg:px-8"
+      >
+        <div class="flex items-center">
+          <div class="hidden lg:block">
+            <a href="https://jobs.karjoo.plus/qazvin">
+              <img src="../img/kp.svg" alt="لوگو" />
+            </a>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 lg:mr-16"
+            id="navbar-sticky"
+          >
+            <ul class="flex text-[#403F40] text-base space-x-1">
+              <li class="px-6 py-3 ml-1">
+                <a
+                  href="https://jobs.karjoo.plus/qazvin"
+                  target="_blank"
+                  target="_blank"
+                  class="block py-3 px-3 lg:p-0"
+                  >نمایشگاه کار</a
+                >
+              </li>
+              <li class="px-6 py-3">
+                <a
+                  href="https://ats.karjoo.plus"
+                  target="_blank"
+                  class="block py-3 px-3 lg:p-0"
+                  >داشبورد ATS</a
+                >
+              </li>
+              <li class="px-6 py-3">
+                <a
+                  href="https://karjoo.plus/blog"
+                  target="_blank"
+                  class="block py-3 px-3 lg:p-0"
+                  >اخبار و مقالات استخدام</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 lg:mr-16"
-          id="navbar-sticky">
-          <ul class="flex text-[#403F40] text-base space-x-1">
-            <li class="px-6 py-3 ml-1">
-              <a href="https://jobs.karjoo.plus/qazvin" target="_blank" target="_blank"
-                class="block py-3 px-3 lg:p-0">نمایشگاه کار</a>
-            </li>
-            <li class="px-6 py-3">
-              <a href="https://ats.karjoo.plus" target="_blank" class="block py-3 px-3 lg:p-0">داشبورد ATS</a>
-            </li>
-            <li class="px-6 py-3">
-              <a href="https://karjoo.plus/blog" target="_blank" class="block py-3 px-3 lg:p-0">اخبار و مقالات
-                استخدام</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="flex justify-between items-center">
-        <button data-collapse-toggle="menu" type="button" class="lg:hidden">
-          <span class="sr-only">منو</span>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="heroicons-outline/bars-3">
-              <path id="Vector" d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#262626" stroke-width="1.5"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </g>
-          </svg>
-        </button>
-        <!-- <button type="button"
+        <div class="flex justify-between items-center">
+          <button data-collapse-toggle="menu" type="button" class="lg:hidden">
+            <span class="sr-only">منو</span>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="heroicons-outline/bars-3">
+                <path
+                  id="Vector"
+                  d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25"
+                  stroke="#262626"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </button>
+          <!-- <button type="button"
           class="hidden rounded-lg border border-solid border-[#8F11A6] text-center px-1 h-[32px] lg:px-8 lg:h-[48px]"
           id="signIn">
           <span class="text-xs lg:text-sm leading-5 text-[#8F11A6]"> ورود | ساخت رزومه </span>
         </button> -->
-        <!-- <div class="hidden" id="logedIn">
+          <!-- <div class="hidden" id="logedIn">
           <div class="lg:flex">
             <span class="pl-4 hidden lg:block">نام و نام خانوادگی</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,858 +108,1666 @@
             </svg>
           </div>
         </div> -->
+        </div>
       </div>
-    </div>
-    <div class="justify-between lg:hidden w-96 h-[42.563rem] px-6 py-0" id="menu-links">
-      <ul class="text-right text-sm leading-5">
-        <li class="py-4">
-          <a href="https://jobs.karjoo.plus/qazvin" target="_blank">نمایشگاه کار</a>
-        </li>
-        <li class="py-4">
-          <a href="https://ats.karjoo.plus" target="_blank">داشبورد ATS</a>
-        </li>
-        <li class="py-4">
-          <a href="https://karjoo.plus/blog" target="_blank">اخبار و مقالات استخدام</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!--nav-->
+      <div
+        class="justify-between lg:hidden w-96 h-[42.563rem] px-6 py-0"
+        id="menu-links"
+      >
+        <ul class="text-right text-sm leading-5">
+          <li class="py-4">
+            <a href="https://jobs.karjoo.plus/qazvin" target="_blank"
+              >نمایشگاه کار</a
+            >
+          </li>
+          <li class="py-4">
+            <a href="https://ats.karjoo.plus" target="_blank">داشبورد ATS</a>
+          </li>
+          <li class="py-4">
+            <a href="https://karjoo.plus/blog" target="_blank"
+              >اخبار و مقالات استخدام</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--nav-->
 
-  <!--exhibitions-section-->
-  <main>
-    <!-- slider -->
-    <div id="default-carousel" class="relative mt-20" data-carousel="slide">
-      <div class="absolute top-8 md:top-1/3 left-0 w-full text-center text-white p-4 z-40">
-        <h2 class="text-base md:text-8xl font-bold">اولین نمایشگاه کار قزوین</h2>
-        <p class="text-xs md:text-5xl font-extrabold md:pt-11">اســفــنــد مــــاه 1402 الـــی خـــــرداد مـــاه 1403
-        </p>
-        <button
-          class="text-sm md:font-lg md:py-4 py-1 bg-white text-[#8F11A6] px-8 md:w-96 rounded md:rounded-lg mt-1 md:mt-16">ثبت
-          نام کارفرما</button>
-      </div>
-      <div class="relative h-44 overflow-hidden rounded-lg md:h-[806px] mx-4 md:mx-24">
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../img/slider-qj.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
+    <!--exhibitions-section-->
+    <main>
+      <!-- slider -->
+      <div id="default-carousel" class="relative mt-20" data-carousel="slide">
+        <div
+          class="absolute top-8 md:top-1/3 left-0 w-full text-center text-white p-4 z-40"
+        >
+          <h2 class="text-base md:text-8xl font-bold">
+            اولین نمایشگاه کار قزوین
+          </h2>
+          <p class="text-xs md:text-5xl font-extrabold md:pt-11">
+            اســفــنــد مــــاه 1402 الـــی خـــــرداد مـــاه 1403
+          </p>
+          <button
+            class="text-sm md:font-lg md:py-4 py-1 bg-white text-[#8F11A6] px-8 md:w-96 rounded md:rounded-lg mt-1 md:mt-16"
+          >
+            ثبت نام کارفرما
+          </button>
         </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../img/slider-qj.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
-        </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../img/slider-qj.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
-        </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../img/slider-qj.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
-        </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../img/slider-qj.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
-        </div>
-      </div>
-      <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-          data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-          data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-          data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-          data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-          data-carousel-slide-to="4"></button>
-      </div>
-    </div>
-
-    <!-- map -->
-    <div class="md:mx-auto p-4 w-full md:w-3/5 mt-10 md:mt-32">
-      <h1 class="text-xl md:text-4xl text-center font-bold md:font-extrabold mb-6 md:mb-16">چرا نمایشگاه کار قزوین</h1>
-      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20 w-full order-last md:order-first">
-        <div class="md:col-span-1">
-          <ul class="space-y-6 md:space-y-8">
-            <li class="items-start">
-              <div class="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="12" fill="white" />
-                  <circle cx="11.9993" cy="11.9998" r="9.33333" fill="#8F11A6" />
-                  <circle cx="11.9993" cy="12.0001" r="7.33333" fill="white" />
-                  <circle cx="12.0007" cy="11.9999" r="4.66667" fill="#8F11A6" />
-                </svg>
-                <h1 class="text-lg font-semibold text-[#8F11A6]">فـرصت بزرگ استخدام</h1>
-              </div>
-              <p class="text-base	font-normal	md:max-w-96">این رویداد، که با همکاری برتـرین برند های استان برگزار خواهد
-                شد، فرصتی بی‌نـظیـر برای کـارجـویان فراهم می‌کند تا با کارفرمایان بزرگ در ارتباط باشند</p>
-            </li>
-            <li class="items-start">
-              <div class="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="12" fill="white" />
-                  <circle cx="11.9993" cy="11.9998" r="9.33333" fill="#8F11A6" />
-                  <circle cx="11.9993" cy="12.0001" r="7.33333" fill="white" />
-                  <circle cx="12.0007" cy="11.9999" r="4.66667" fill="#8F11A6" />
-                </svg>
-                <h1 class="text-lg font-semibold text-[#8F11A6]">رقابـت بـرنـد کارفرمایی</h1>
-              </div>
-              <p class="text-base	font-normal	md:max-w-96">این نمایشگاه امـکان ویـژه ای را بـرای کـارفــرمـایـان فراهم
-                می کند تا برند کارفرمایی خود را ارتقـا دهند و از مـیـــان درخــواســـت هــا اســتـــخـــدام کـنـنـد.</p>
-            </li>
-            <li class="items-start">
-              <div class="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="12" fill="white" />
-                  <circle cx="11.9993" cy="11.9998" r="9.33333" fill="#8F11A6" />
-                  <circle cx="11.9993" cy="12.0001" r="7.33333" fill="white" />
-                  <circle cx="12.0007" cy="11.9999" r="4.66667" fill="#8F11A6" />
-                </svg>
-                <h1 class="text-lg font-semibold text-[#8F11A6]">شهـر صنـعـتی قـزویـن </h1>
-              </div>
-              <p class="text-base	font-normal	md:max-w-96">این نمایشگاه یکی از مهم ترین راه های تخـصـصی برای ایجاد
-                ارتبـاط میان اجـزای مختـلف بـازار کـار در ایـن اسـتــان است.</p>
-            </li>
-          </ul>
-          <div class="flex justify-center mt-8">
-            <button class="px-4 py-2 bg-[#8F11A6] text-white rounded w-full">ثبت نام کارفرماها</button>
+        <div
+          class="relative h-44 overflow-hidden rounded-lg md:h-[806px] mx-4 md:mx-24"
+        >
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="../img/slider-qj.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+              alt="..."
+            />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="../img/slider-qj.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+              alt="..."
+            />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="../img/slider-qj.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+              alt="..."
+            />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="../img/slider-qj.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+              alt="..."
+            />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="../img/slider-qj.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+              alt="..."
+            />
           </div>
         </div>
-        <div class="relative md:col-span-2 order-first md:order-last mb-6 md:mb-0">
-          <img src="../img/map-exhibition.jpg" alt="نمایشگاه کار" class="w-full h-full">
-          <div class="absolute inset-0 flex items-center justify-center">
-          </div>
+        <div
+          class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 4"
+            data-carousel-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 5"
+            data-carousel-slide-to="4"
+          ></button>
         </div>
       </div>
-    </div>
 
-    <!-- brands -->
-    <div class="container mx-auto px-4 py-8 md:max-w-6xl mt-10 md:mt-32">
-      <h2 class="text-center text-xl font-bold md:text-4xl md:font-extrabold mb-6 md:mb-16">برندهای کارفرمایی حاضر در نمایشگاه کار</h2>
-      <div class="flex justify-between items-center overflow-x-auto no-scrollbar whitespace-nowrap">
-        <img src="../img/logo9.png" alt="nafis-nakh" class="md:w-32 md:h-32 w-24 h-24 mx-4">
-        <img src="../img/shimibehdash.svg" alt="Shimi-Behdash" class="md:w-32 md:h-32 w-24 h-24 mx-4">
-        <img src="../img/logo7.svg" alt="Kashi-Pars" class="md:w-32 md:h-32 w-24 h-24 mx-4">
-        <img src="../img/arapoosh.png" alt="Arapoosh" class="md:w-32 md:h-32 w-24 h-24 mx-4">
-        <img src="../img/logo4.svg" alt="AGT" class="md:w-32 md:h-32 w-24 h-24 mx-4">
-      </div>
-    </div>
-
-    <div class="z-0 mt-10 md:mt-40 mt-10 md:mt-32">
-      <h1 class="text-xl font-bold md:font-extrabold mb-6 md:mb-16 md:text-4xl text-center">نظـر کارفـرمـایـان درباره ی نمـایـشـگـاه
-        کـار</h1>
-      <div class="2xl:w-3/5 2xl:m-auto mt-6 md:mt-16">
-        <div id="default-carousel" class="relative mb-4 mt-4 2xl:ml-4 2xl:mx-0 mx-4 " data-carousel="static">
-          <div class="overflow-hidden relative h-80 rounded-lg xl:h-80 2xl:h-96">
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <div class="2xl:flex w-full justify-between 2xl:mt-7 mt-2">
-                <div class="rounded-xl overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl">
-                  <div class="py-4 px-6 w-full h-auto overflow-y-hidden">
-                    <div class="flex">
-                      <img class="object-cover w-16 h-16 rounded-full" src="../img/avatar.png" alt="">
-                      <div class="mr-3 mt-2.5">
-                        <p class="block text-[#262626] text-base font-semibold not-italic">سیده نازلی اکملی</p>
-                        <span class="block text-[#595759] text-sm font-medium not-italic">مدیر محصول در جریان</span>
-                      </div>
-                    </div>
-                    <div class="mt-4">
-                      <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی
-                        با تولید سادگی
-                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                        از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ. </p>
-                    </div>
-                  </div>
+      <!-- map -->
+      <div class="md:mx-auto p-4 w-full md:w-3/5 mt-10 md:mt-32">
+        <h1
+          class="text-xl md:text-4xl text-center font-bold md:font-extrabold mb-6 md:mb-16"
+        >
+          چرا نمایشگاه کار قزوین
+        </h1>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 md:gap-20 w-full order-last md:order-first"
+        >
+          <div class="md:col-span-1">
+            <ul class="space-y-6 md:space-y-8">
+              <li class="items-start">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <circle cx="12" cy="12" r="12" fill="white" />
+                    <circle
+                      cx="11.9993"
+                      cy="11.9998"
+                      r="9.33333"
+                      fill="#8F11A6"
+                    />
+                    <circle
+                      cx="11.9993"
+                      cy="12.0001"
+                      r="7.33333"
+                      fill="white"
+                    />
+                    <circle
+                      cx="12.0007"
+                      cy="11.9999"
+                      r="4.66667"
+                      fill="#8F11A6"
+                    />
+                  </svg>
+                  <h1 class="text-lg font-semibold text-[#8F11A6]">
+                    فـرصت بزرگ استخدام
+                  </h1>
                 </div>
-                <div
-                  class="hidden 2xl:block rounded-xl overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl">
-                  <div class="py-4 px-6 w-full h-auto">
-                    <div class="flex">
-                      <img class="object-cover w-16 h-16 rounded-full" src="../img/avatar.png" alt="">
-                      <div class="mr-3 mt-2.5">
-                        <p class="block text-[#262626] text-base font-semibold not-italic">سیده نازلی اکملی</p>
-                        <span class="block text-[#595759] text-sm font-medium not-italic">مدیر محصول در جریان</span>
-                      </div>
-                    </div>
-                    <div class="mt-6">
-                      <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی
-                        با تولید سادگی
-                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                        از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                        چاپ. </p>
-                    </div>
-                  </div>
+                <p class="text-base font-normal md:max-w-96">
+                  این رویداد، که با همکاری برتـرین برند های استان برگزار خواهد
+                  شد، فرصتی بی‌نـظیـر برای کـارجـویان فراهم می‌کند تا با
+                  کارفرمایان بزرگ در ارتباط باشند
+                </p>
+              </li>
+              <li class="items-start">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <circle cx="12" cy="12" r="12" fill="white" />
+                    <circle
+                      cx="11.9993"
+                      cy="11.9998"
+                      r="9.33333"
+                      fill="#8F11A6"
+                    />
+                    <circle
+                      cx="11.9993"
+                      cy="12.0001"
+                      r="7.33333"
+                      fill="white"
+                    />
+                    <circle
+                      cx="12.0007"
+                      cy="11.9999"
+                      r="4.66667"
+                      fill="#8F11A6"
+                    />
+                  </svg>
+                  <h1 class="text-lg font-semibold text-[#8F11A6]">
+                    رقابـت بـرنـد کارفرمایی
+                  </h1>
                 </div>
-              </div>
+                <p class="text-base font-normal md:max-w-96">
+                  این نمایشگاه امـکان ویـژه ای را بـرای کـارفــرمـایـان فراهم می
+                  کند تا برند کارفرمایی خود را ارتقـا دهند و از مـیـــان
+                  درخــواســـت هــا اســتـــخـــدام کـنـنـد.
+                </p>
+              </li>
+              <li class="items-start">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <circle cx="12" cy="12" r="12" fill="white" />
+                    <circle
+                      cx="11.9993"
+                      cy="11.9998"
+                      r="9.33333"
+                      fill="#8F11A6"
+                    />
+                    <circle
+                      cx="11.9993"
+                      cy="12.0001"
+                      r="7.33333"
+                      fill="white"
+                    />
+                    <circle
+                      cx="12.0007"
+                      cy="11.9999"
+                      r="4.66667"
+                      fill="#8F11A6"
+                    />
+                  </svg>
+                  <h1 class="text-lg font-semibold text-[#8F11A6]">
+                    شهـر صنـعـتی قـزویـن
+                  </h1>
+                </div>
+                <p class="text-base font-normal md:max-w-96">
+                  این نمایشگاه یکی از مهم ترین راه های تخـصـصی برای ایجاد
+                  ارتبـاط میان اجـزای مختـلف بـازار کـار در ایـن اسـتــان است.
+                </p>
+              </li>
+            </ul>
+            <div class="flex justify-center mt-8">
+              <button class="px-4 py-2 bg-[#8F11A6] text-white rounded w-full">
+                ثبت نام کارفرماها
+              </button>
             </div>
-            <div class="overflow-hidden relative h-80 rounded-lg xl:h-80 2xl:h-96">
+          </div>
+          <div
+            class="relative md:col-span-2 order-first md:order-last mb-6 md:mb-0"
+          >
+            <img
+              src="../img/map-exhibition.jpg"
+              alt="نمایشگاه کار"
+              class="w-full h-full"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-center"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- brands -->
+      <div class="container mx-auto px-4 py-8 md:max-w-6xl mt-10 md:mt-32">
+        <h2
+          class="text-center text-xl font-bold md:text-4xl md:font-extrabold mb-6 md:mb-16"
+        >
+          برندهای کارفرمایی حاضر در نمایشگاه کار
+        </h2>
+        <div
+          class="flex justify-between items-center overflow-x-auto no-scrollbar whitespace-nowrap"
+        >
+          <img
+            src="../img/logo9.png"
+            alt="nafis-nakh"
+            class="md:w-32 md:h-32 w-24 h-24 mx-4"
+          />
+          <img
+            src="../img/shimibehdash.svg"
+            alt="Shimi-Behdash"
+            class="md:w-32 md:h-32 w-24 h-24 mx-4"
+          />
+          <img
+            src="../img/logo7.svg"
+            alt="Kashi-Pars"
+            class="md:w-32 md:h-32 w-24 h-24 mx-4"
+          />
+          <img
+            src="../img/arapoosh.png"
+            alt="Arapoosh"
+            class="md:w-32 md:h-32 w-24 h-24 mx-4"
+          />
+          <img
+            src="../img/logo4.svg"
+            alt="AGT"
+            class="md:w-32 md:h-32 w-24 h-24 mx-4"
+          />
+        </div>
+      </div>
+
+      <div class="z-0 mt-10 md:mt-32">
+        <h1
+          class="text-xl font-bold md:font-extrabold mb-6 md:mb-16 md:text-4xl text-center"
+        >
+          نظـر کارفـرمـایـان درباره ی نمـایـشـگـاه کـار
+        </h1>
+        <div class="2xl:w-3/5 2xl:m-auto mt-6 md:mt-16">
+          <div
+            id="default-carousel"
+            class="relative mb-4 mt-4 2xl:ml-4 2xl:mx-0 mx-4"
+            data-carousel="static"
+          >
+            <div
+              class="overflow-hidden relative h-80 rounded-lg xl:h-80 2xl:h-96"
+            >
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <div class="2xl:flex w-full justify-between 2xl:mt-7 mt-2">
-                  <div class="rounded-xl overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl">
-                    <div class="py-4 px-6 w-full h-auto">
+                  <div
+                    class="overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl"
+                  >
+                    <div class="py-4 px-6 w-full h-auto overflow-y-hidden">
                       <div class="flex">
-                        <img class="object-cover w-16 h-16 rounded-full" src="../img/avatar.png" alt="">
+                        <img
+                          class="object-cover w-16 h-16 rounded-full"
+                          src="../img/avatar.png"
+                          alt=""
+                        />
                         <div class="mr-3 mt-2.5">
-                          <p class="block text-[#262626] text-base font-semibold not-italic">سیده نازلی اکملی</p>
-                          <span class="block text-[#595759] text-sm font-medium not-italic">مدیر محصول در جریان</span>
+                          <p
+                            class="block text-[#262626] text-base font-semibold not-italic"
+                          >
+                            سیده نازلی اکملی
+                          </p>
+                          <span
+                            class="block text-[#595759] text-sm font-medium not-italic"
+                            >مدیر محصول در جریان</span
+                          >
                         </div>
                       </div>
-                      <div class="mt-6">
-                        <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی
-                          با تولید
-                          سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی
-                          نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی
-                          نامفهوم از صنعت چاپ. </p>
+                      <div class="mt-4">
+                        <p
+                          class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"
+                        >
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                          چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن
+                          ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                          استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با
+                          تولید سادگی نامفهوم از صنعت چاپ.
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div
-                    class="hidden 2xl:block  rounded-xl overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl">
+                    class="hidden 2xl:block overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl"
+                  >
                     <div class="py-4 px-6 w-full h-auto">
                       <div class="flex">
-                        <img class="object-cover w-16 h-16 rounded-full" src="../img/avatar.png" alt="">
+                        <img
+                          class="object-cover w-16 h-16 rounded-full"
+                          src="../img/avatar.png"
+                          alt=""
+                        />
                         <div class="mr-3 mt-2.5">
-                          <p class="block text-[#262626] text-base font-semibold not-italic">سیده نازلی اکملی</p>
-                          <span class="block text-[#595759] text-sm font-medium not-italic">مدیر محصول در جریان</span>
+                          <p
+                            class="block text-[#262626] text-base font-semibold not-italic"
+                          >
+                            سیده نازلی اکملی
+                          </p>
+                          <span
+                            class="block text-[#595759] text-sm font-medium not-italic"
+                            >مدیر محصول در جریان</span
+                          >
                         </div>
                       </div>
                       <div class="mt-6">
-                        <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن ساختگی
-                          با تولید
-                          سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی
-                          نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید سادگی
-                          نامفهوم از صنعت چاپ. </p>
+                        <p
+                          class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"
+                        >
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                          چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن
+                          ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                          استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با
+                          تولید سادگی نامفهوم از صنعت چاپ.
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="overflow-hidden relative h-80 rounded-lg  xl:h-80 2xl:h-96">
+              <div
+                class="overflow-hidden relative h-80 rounded-lg xl:h-80 2xl:h-96"
+              >
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                   <div class="2xl:flex w-full justify-between 2xl:mt-7 mt-2">
-                    <div class="rounded-xl overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl">
+                    <div
+                      class="overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl"
+                    >
                       <div class="py-4 px-6 w-full h-auto">
                         <div class="flex">
-                          <img class="object-cover w-16 h-16 rounded-full" src="../img/avatar.png" alt="">
+                          <img
+                            class="object-cover w-16 h-16 rounded-full"
+                            src="../img/avatar.png"
+                            alt=""
+                          />
                           <div class="mr-3 mt-2.5">
-                            <p class="block text-[#262626] text-base font-semibold not-italic">سیده نازلی اکملی</p>
-                            <span class="block text-[#595759] text-sm font-medium not-italic">مدیر محصول در جریان</span>
+                            <p
+                              class="block text-[#262626] text-base font-semibold not-italic"
+                            >
+                              سیده نازلی اکملی
+                            </p>
+                            <span
+                              class="block text-[#595759] text-sm font-medium not-italic"
+                              >مدیر محصول در جریان</span
+                            >
                           </div>
                         </div>
                         <div class="mt-6">
-                          <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن
-                            ساختگی با تولید
-                            سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
-                            سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
-                            سادگی نامفهوم از صنعت چاپ. </p>
+                          <p
+                            class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"
+                          >
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم
+                            متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                            استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با
+                            تولید سادگی نامفهوم از صنعت چاپ.
+                          </p>
                         </div>
                       </div>
                     </div>
                     <div
-                      class="hidden 2xl:block  rounded-xl overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl">
+                      class="hidden 2xl:block overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl"
+                    >
                       <div class="py-4 px-6 w-full h-auto">
                         <div class="flex">
-                          <img class="object-cover w-16 h-16 rounded-full" src="../img/avatar.png" alt="">
+                          <img
+                            class="object-cover w-16 h-16 rounded-full"
+                            src="../img/avatar.png"
+                            alt=""
+                          />
                           <div class="mr-3 mt-2.5">
-                            <p class="block text-[#262626] text-base font-semibold not-italic">سیده نازلی اکملی</p>
-                            <span class="block text-[#595759] text-sm font-medium not-italic">مدیر محصول در جریان</span>
+                            <p
+                              class="block text-[#262626] text-base font-semibold not-italic"
+                            >
+                              سیده نازلی اکملی
+                            </p>
+                            <span
+                              class="block text-[#595759] text-sm font-medium not-italic"
+                              >مدیر محصول در جریان</span
+                            >
                           </div>
                         </div>
                         <div class="mt-6">
-                          <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن
-                            ساختگی با تولید
-                            سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
-                            سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
-                            سادگی نامفهوم از صنعت چاپ. </p>
+                          <p
+                            class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"
+                          >
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم
+                            متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                            استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با
+                            تولید سادگی نامفهوم از صنعت چاپ.
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="overflow-hidden relative h-80 rounded-lg xl:h-80 2xl:h-96">
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div
+                  class="overflow-hidden relative h-80 rounded-lg xl:h-80 2xl:h-96"
+                >
+                  <div
+                    class="hidden duration-700 ease-in-out"
+                    data-carousel-item
+                  >
                     <div class="2xl:flex w-full justify-between 2xl:mt-7 mt-2">
-                      <div class="rounded-xl overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl">
+                      <div
+                        class="overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl"
+                      >
                         <div class="py-4 px-6 w-full h-auto">
                           <div class="flex">
-                            <img class="object-cover w-16 h-16 rounded-full" src="../img/avatar.png" alt="">
+                            <img
+                              class="object-cover w-16 h-16 rounded-full"
+                              src="../img/avatar.png"
+                              alt=""
+                            />
                             <div class="mr-3 mt-2.5">
-                              <p class="block text-[#262626] text-base font-semibold not-italic">سیده نازلی اکملی</p>
-                              <span class="block text-[#595759] text-sm font-medium not-italic">مدیر محصول در
-                                جریان</span>
+                              <p
+                                class="block text-[#262626] text-base font-semibold not-italic"
+                              >
+                                سیده نازلی اکملی
+                              </p>
+                              <span
+                                class="block text-[#595759] text-sm font-medium not-italic"
+                                >مدیر محصول در جریان</span
+                              >
                             </div>
                           </div>
                           <div class="mt-6">
-                            <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن
-                              ساختگی با تولید
-                              سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
-                              سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
-                              سادگی نامفهوم از صنعت چاپ. </p>
+                            <p
+                              class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"
+                            >
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                              صنعت چاپ، و با استفاده از طراحان گرافیک لورم
+                              ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                              چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن
+                              ساختگی با تولید سادگی نامفهوم از صنعت چاپ.
+                            </p>
                           </div>
                         </div>
                       </div>
                       <div
-                        class="hidden 2xl:block  rounded-xl overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl">
+                        class="hidden 2xl:block overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl"
+                      >
                         <div class="py-4 px-6 w-full h-auto">
                           <div class="flex">
-                            <img class="object-cover w-16 h-16 rounded-full" src="../img/avatar.png" alt="">
+                            <img
+                              class="object-cover w-16 h-16 rounded-full"
+                              src="../img/avatar.png"
+                              alt=""
+                            />
                             <div class="mr-3 mt-2.5">
-                              <p class="block text-[#262626] text-base font-semibold not-italic">سیده نازلی اکملی</p>
-                              <span class="block text-[#595759] text-sm font-medium not-italic">مدیر محصول در
-                                جریان</span>
+                              <p
+                                class="block text-[#262626] text-base font-semibold not-italic"
+                              >
+                                سیده نازلی اکملی
+                              </p>
+                              <span
+                                class="block text-[#595759] text-sm font-medium not-italic"
+                                >مدیر محصول در جریان</span
+                              >
                             </div>
                           </div>
                           <div class="mt-6">
-                            <p class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"> لورم ایپسوم متن
-                              ساختگی با تولید
-                              سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
-                              سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن ساختگی با تولید
-                              سادگی نامفهوم از صنعت چاپ. </p>
+                            <p
+                              class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"
+                            >
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                              صنعت چاپ، و با استفاده از طراحان گرافیک لورم
+                              ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                              چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم متن
+                              ساختگی با تولید سادگی نامفهوم از صنعت چاپ.
+                            </p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="flex absolute 2xl:bottom-20 bottom-6 left-1/2 z-30 space-x-3 -translate-x-1/2" dir="ltr">
-                  <button type="button" class="w-6 h-1 hover:w-8 " aria-current="false" aria-label="Slide 4"
-                    data-carousel-slide-to="3"></button>
-                  <button type="button" class="w-6 h-1 hover:w-8 " aria-current="false" aria-label="Slide 3"
-                    data-carousel-slide-to="2"></button>
-                  <button type="button" class="w-6 h-1 hover:w-8 " aria-current="false" aria-label="Slide 2"
-                    data-carousel-slide-to="1"></button>
-                  <button type="button" class="w-6 h-1 hover:w-8 " aria-current="false" aria-label="Slide 1"
-                    data-carousel-slide-to="0"></button>
+                  <div
+                    class="overflow-hidden relative h-80 rounded-lg xl:h-80 2xl:h-96"
+                  >
+                    <div
+                      class="hidden duration-700 ease-in-out"
+                      data-carousel-item
+                    >
+                      <div
+                        class="2xl:flex w-full justify-between 2xl:mt-7 mt-2"
+                      >
+                        <div
+                          class="overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl"
+                        >
+                          <div class="py-4 px-6 w-full h-auto">
+                            <div class="flex">
+                              <img
+                                class="object-cover w-16 h-16 rounded-full"
+                                src="../img/avatar.png"
+                                alt=""
+                              />
+                              <div class="mr-3 mt-2.5">
+                                <p
+                                  class="block text-[#262626] text-base font-semibold not-italic"
+                                >
+                                  سیده نازلی اکملی
+                                </p>
+                                <span
+                                  class="block text-[#595759] text-sm font-medium not-italic"
+                                  >مدیر محصول در جریان</span
+                                >
+                              </div>
+                            </div>
+                            <div class="mt-6">
+                              <p
+                                class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"
+                              >
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                صنعت چاپ، و با استفاده از طراحان گرافیک لورم
+                                ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم
+                                متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="hidden 2xl:block overflow-hidden 2xl:w-[49%] w-full border border-[#E5E3E5] rounded-xl"
+                        >
+                          <div class="py-4 px-6 w-full h-auto">
+                            <div class="flex">
+                              <img
+                                class="object-cover w-16 h-16 rounded-full"
+                                src="../img/avatar.png"
+                                alt=""
+                              />
+                              <div class="mr-3 mt-2.5">
+                                <p
+                                  class="block text-[#262626] text-base font-semibold not-italic"
+                                >
+                                  سیده نازلی اکملی
+                                </p>
+                                <span
+                                  class="block text-[#595759] text-sm font-medium not-italic"
+                                  >مدیر محصول در جریان</span
+                                >
+                              </div>
+                            </div>
+                            <div class="mt-6">
+                              <p
+                                class="text-[#403F40] 2xl:text-base text-sm font-medium text-justify"
+                              >
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                صنعت چاپ، و با استفاده از طراحان گرافیک لورم
+                                ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                چاپ، و با استفاده از طراحان گرافیک لورم ایپسوم
+                                متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex absolute 2xl:bottom-20 bottom-6 left-1/2 z-30 space-x-3 -translate-x-1/2"
+                    dir="ltr"
+                  >
+                    <button
+                      type="button"
+                      class="w-6 h-1 hover:w-8"
+                      aria-current="false"
+                      aria-label="Slide 4"
+                      data-carousel-slide-to="3"
+                    ></button>
+                    <button
+                      type="button"
+                      class="w-6 h-1 hover:w-8"
+                      aria-current="false"
+                      aria-label="Slide 3"
+                      data-carousel-slide-to="2"
+                    ></button>
+                    <button
+                      type="button"
+                      class="w-6 h-1 hover:w-8"
+                      aria-current="false"
+                      aria-label="Slide 2"
+                      data-carousel-slide-to="1"
+                    ></button>
+                    <button
+                      type="button"
+                      class="w-6 h-1 hover:w-8"
+                      aria-current="false"
+                      aria-label="Slide 1"
+                      data-carousel-slide-to="0"
+                    ></button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- platforms -->
-    <div class="flex my-24 flex-col items-center justify-center text-center m-auto w-full sm:w-10/12 mt-10 md:mt-32 md:w-3/5">
-      <div class=" sm:w-auto flex flex-col items-center">
-        <h1 class="text-xl font-bold md:text-4xl font-extrabold mb-6 md:mb-16">پلتفرم های نمایشگاه کار قزوین</h1>
-      </div>
-      <div style="background-image: url(./../img/Frame1.png)"
-        class="hidden sm:block relative sm:w-full rounded-3xl sm:h-60 sm:bg-[#128AB2] sm:mt-56">
-        <div class="sm:absolute bottom-2 left-1 md:-left-6 mr-10">
-          <img src="./../img/MacBookPro16.png" alt="">
+      <!-- platforms -->
+      <div
+        class="flex my-24 flex-col items-center justify-center text-center m-auto w-full sm:w-10/12 mt-10 md:mt-32 md:w-3/5"
+      >
+        <div class="sm:w-auto flex flex-col items-center">
+          <h1 class="text-xl md:text-4xl font-extrabold mb-6 md:mb-16">
+            پلتفرم های نمایشگاه کار قزوین
+          </h1>
         </div>
         <div
-          class="p-3 sm:absolute bottom-32 right-14 md:right-6 custom-shadow-top rounded-md border-t border-[#E5E3E5] sm:w-2/5 sm:visible bg-white">
-          <div class="flex justify-between ">
-            <p class="">طراحی محصول</p>
-            <div class="flex justify-center items-center">
-              <button class="flex justify-center items-center px-2.5 py-0.5">
-                منتشرشده
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M8.96742 12.2793C8.75963 12.487 8.42274 12.487 8.21495 12.2793L2.89412 6.95843C2.68633 6.75064 2.68633 6.41374 2.89412 6.20595C3.10192 5.99816 3.43881 5.99816 3.6466 6.20595L8.59119 11.1505L13.5358 6.20595C13.7436 5.99816 14.0805 5.99816 14.2882 6.20595C14.496 6.41374 14.496 6.75064 14.2882 6.95843L8.96742 12.2793Z"
-                    fill="#262626" />
+          style="background-image: url(./../img/Frame1.png)"
+          class="hidden sm:block relative sm:w-full rounded-3xl sm:h-60 sm:bg-[#128AB2] sm:mt-56"
+        >
+          <div class="sm:absolute bottom-2 left-1 md:-left-6 mr-10">
+            <img src="./../img/MacBookPro16.png" alt="" />
+          </div>
+          <div
+            class="p-3 sm:absolute bottom-32 right-14 md:right-6 custom-shadow-top rounded-md border-t border-[#E5E3E5] sm:w-2/5 sm:visible bg-white"
+          >
+            <div class="flex justify-between">
+              <p class="">طراحی محصول</p>
+              <div class="flex justify-center items-center">
+                <button class="flex justify-center items-center px-2.5 py-0.5">
+                  منتشرشده
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.96742 12.2793C8.75963 12.487 8.42274 12.487 8.21495 12.2793L2.89412 6.95843C2.68633 6.75064 2.68633 6.41374 2.89412 6.20595C3.10192 5.99816 3.43881 5.99816 3.6466 6.20595L8.59119 11.1505L13.5358 6.20595C13.7436 5.99816 14.0805 5.99816 14.2882 6.20595C14.496 6.41374 14.496 6.75064 14.2882 6.95843L8.96742 12.2793Z"
+                      fill="#262626"
+                    />
+                  </svg>
+                </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                  fill="none"
+                >
+                  <path
+                    d="M14.9767 3.84623L16.4133 2.40961C17.0367 1.78623 18.0473 1.78623 18.6707 2.40961C19.2941 3.03298 19.2941 4.04367 18.6707 4.66704L9.63073 13.707C9.18065 14.1571 8.62553 14.4879 8.01551 14.6697L5.72978 15.3505L6.41065 13.0648C6.59237 12.4548 6.92321 11.8997 7.37329 11.4496L14.9767 3.84623ZM14.9767 3.84623L17.2228 6.09231M15.9458 11.9452V15.989C15.9458 17.0469 15.0882 17.9045 14.0303 17.9045H5.09128C4.03338 17.9045 3.17578 17.0469 3.17578 15.989V7.05006C3.17578 5.99216 4.03338 5.13456 5.09128 5.13456H9.1351"
+                    stroke="#262626"
+                    stroke-width="1.277"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex my-3.5">
+              <p class="ml-1.5 text-sm font-medium">دپارتمان :</p>
+              <p class="ml-1.5 text-sm font-normal">محصول</p>
+              <p class="ml-1.5 text-sm font-medium">لوکیشن :</p>
+              <p class="ml-1.5 text-sm font-normal">تهران، خیابان سعادت آباد</p>
+            </div>
+            <div class="flex justify-between my-3.5">
+              <p class="text-xs font-bold flex justify-between py-2">
+                <span>۴۲۰ نفر در پایپلان</span>
+                <span class="mr-3.5">۱۲ درخواست جدید</span>
+              </p>
+              <button
+                class="flex justify-center items-center px-2.5 py-1.5 w-48 rounded-md bg-[#128AB2]"
+              >
+                <p class="text-xs font-normal text-white">مشاهده پایپلاین</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.21444 9.62428C6.00665 9.41649 6.00665 9.0796 6.21444 8.87181L11.5353 3.55098C11.743 3.34319 12.0799 3.34319 12.2877 3.55098C12.4955 3.75878 12.4955 4.09567 12.2877 4.30346L7.34315 9.24805L12.2877 14.1926C12.4955 14.4004 12.4955 14.7373 12.2877 14.9451C12.0799 15.1529 11.743 15.1529 11.5353 14.9451L6.21444 9.62428Z"
+                    fill="white"
+                  />
                 </svg>
               </button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                <path
-                  d="M14.9767 3.84623L16.4133 2.40961C17.0367 1.78623 18.0473 1.78623 18.6707 2.40961C19.2941 3.03298 19.2941 4.04367 18.6707 4.66704L9.63073 13.707C9.18065 14.1571 8.62553 14.4879 8.01551 14.6697L5.72978 15.3505L6.41065 13.0648C6.59237 12.4548 6.92321 11.8997 7.37329 11.4496L14.9767 3.84623ZM14.9767 3.84623L17.2228 6.09231M15.9458 11.9452V15.989C15.9458 17.0469 15.0882 17.9045 14.0303 17.9045H5.09128C4.03338 17.9045 3.17578 17.0469 3.17578 15.989V7.05006C3.17578 5.99216 4.03338 5.13456 5.09128 5.13456H9.1351"
-                  stroke="#262626" stroke-width="1.277" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
             </div>
+            <div></div>
           </div>
-          <div class="flex my-3.5">
-            <p class="ml-1.5 text-sm font-medium ">دپارتمان : </p>
-            <p class="ml-1.5 text-sm font-normal">محصول</p>
-            <p class="ml-1.5 text-sm font-medium">لوکیشن :</p>
-            <p class="ml-1.5 text-sm font-normal">تهران، خیابان سعادت آباد</p>
-          </div>
-          <div class="flex justify-between my-3.5">
-            <p class="text-xs font-bold flex justify-between py-2">
-              <span>۴۲۰ نفر در پایپلان</span>
-              <span class="mr-3.5">۱۲ درخواست جدید</span>
-            </p>
-            <button class="flex justify-center items-center px-2.5 py-1.5 w-48 rounded-md bg-[#128AB2]">
-              <p class="text-xs font-normal text-white">مشاهده پایپلاین</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M6.21444 9.62428C6.00665 9.41649 6.00665 9.0796 6.21444 8.87181L11.5353 3.55098C11.743 3.34319 12.0799 3.34319 12.2877 3.55098C12.4955 3.75878 12.4955 4.09567 12.2877 4.30346L7.34315 9.24805L12.2877 14.1926C12.4955 14.4004 12.4955 14.7373 12.2877 14.9451C12.0799 15.1529 11.743 15.1529 11.5353 14.9451L6.21444 9.62428Z"
-                  fill="white" />
-              </svg>
-            </button>
-          </div>
-          <div>
-          </div>
-        </div>
-        <div
-          class="p-3 sm:absolute top-36 right-14 md:right-6 custom-shadow-bottom rounded-md border-t border-[#E5E3E5] sm:w-2/5 sm:visible bg-white">
-          <div class="flex justify-between ">
-            <p class="">طراحی محصول</p>
-            <div class="flex justify-center items-center">
-              <button class="flex justify-center items-center px-2.5 py-0.5">
-                منتشرشده
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M8.96742 12.2793C8.75963 12.487 8.42274 12.487 8.21495 12.2793L2.89412 6.95843C2.68633 6.75064 2.68633 6.41374 2.89412 6.20595C3.10192 5.99816 3.43881 5.99816 3.6466 6.20595L8.59119 11.1505L13.5358 6.20595C13.7436 5.99816 14.0805 5.99816 14.2882 6.20595C14.496 6.41374 14.496 6.75064 14.2882 6.95843L8.96742 12.2793Z"
-                    fill="#262626" />
+          <div
+            class="p-3 sm:absolute top-36 right-14 md:right-6 custom-shadow-bottom rounded-md border-t border-[#E5E3E5] sm:w-2/5 sm:visible bg-white"
+          >
+            <div class="flex justify-between">
+              <p class="">طراحی محصول</p>
+              <div class="flex justify-center items-center">
+                <button class="flex justify-center items-center px-2.5 py-0.5">
+                  منتشرشده
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.96742 12.2793C8.75963 12.487 8.42274 12.487 8.21495 12.2793L2.89412 6.95843C2.68633 6.75064 2.68633 6.41374 2.89412 6.20595C3.10192 5.99816 3.43881 5.99816 3.6466 6.20595L8.59119 11.1505L13.5358 6.20595C13.7436 5.99816 14.0805 5.99816 14.2882 6.20595C14.496 6.41374 14.496 6.75064 14.2882 6.95843L8.96742 12.2793Z"
+                      fill="#262626"
+                    />
+                  </svg>
+                </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                  fill="none"
+                >
+                  <path
+                    d="M14.9767 3.84623L16.4133 2.40961C17.0367 1.78623 18.0473 1.78623 18.6707 2.40961C19.2941 3.03298 19.2941 4.04367 18.6707 4.66704L9.63073 13.707C9.18065 14.1571 8.62553 14.4879 8.01551 14.6697L5.72978 15.3505L6.41065 13.0648C6.59237 12.4548 6.92321 11.8997 7.37329 11.4496L14.9767 3.84623ZM14.9767 3.84623L17.2228 6.09231M15.9458 11.9452V15.989C15.9458 17.0469 15.0882 17.9045 14.0303 17.9045H5.09128C4.03338 17.9045 3.17578 17.0469 3.17578 15.989V7.05006C3.17578 5.99216 4.03338 5.13456 5.09128 5.13456H9.1351"
+                    stroke="#262626"
+                    stroke-width="1.277"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex my-3.5">
+              <p class="ml-1.5 text-sm font-medium">دپارتمان :</p>
+              <p class="ml-1.5 text-sm font-normal">محصول</p>
+              <p class="ml-1.5 text-sm font-medium">لوکیشن :</p>
+              <p class="ml-1.5 text-sm font-normal">تهران، خیابان سعادت آباد</p>
+            </div>
+            <div class="flex justify-between my-3.5">
+              <p class="text-xs font-bold flex justify-between py-2">
+                <span>۴۲۰ نفر در پایپلان</span>
+                <span class="mr-3.5">۱۲ درخواست جدید</span>
+              </p>
+              <button
+                class="flex justify-center items-center px-2.5 py-1.5 w-48 rounded-md bg-[#128AB2]"
+              >
+                <p class="text-xs font-normal text-white">مشاهده پایپلاین</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.21444 9.62428C6.00665 9.41649 6.00665 9.0796 6.21444 8.87181L11.5353 3.55098C11.743 3.34319 12.0799 3.34319 12.2877 3.55098C12.4955 3.75878 12.4955 4.09567 12.2877 4.30346L7.34315 9.24805L12.2877 14.1926C12.4955 14.4004 12.4955 14.7373 12.2877 14.9451C12.0799 15.1529 11.743 15.1529 11.5353 14.9451L6.21444 9.62428Z"
+                    fill="white"
+                  />
                 </svg>
               </button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                <path
-                  d="M14.9767 3.84623L16.4133 2.40961C17.0367 1.78623 18.0473 1.78623 18.6707 2.40961C19.2941 3.03298 19.2941 4.04367 18.6707 4.66704L9.63073 13.707C9.18065 14.1571 8.62553 14.4879 8.01551 14.6697L5.72978 15.3505L6.41065 13.0648C6.59237 12.4548 6.92321 11.8997 7.37329 11.4496L14.9767 3.84623ZM14.9767 3.84623L17.2228 6.09231M15.9458 11.9452V15.989C15.9458 17.0469 15.0882 17.9045 14.0303 17.9045H5.09128C4.03338 17.9045 3.17578 17.0469 3.17578 15.989V7.05006C3.17578 5.99216 4.03338 5.13456 5.09128 5.13456H9.1351"
-                  stroke="#262626" stroke-width="1.277" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
             </div>
-          </div>
-          <div class="flex my-3.5">
-            <p class="ml-1.5 text-sm font-medium ">دپارتمان : </p>
-            <p class="ml-1.5 text-sm font-normal">محصول</p>
-            <p class="ml-1.5 text-sm font-medium">لوکیشن :</p>
-            <p class="ml-1.5 text-sm font-normal">تهران، خیابان سعادت آباد</p>
-          </div>
-          <div class="flex justify-between my-3.5">
-            <p class="text-xs font-bold flex justify-between py-2">
-              <span>۴۲۰ نفر در پایپلان</span>
-              <span class="mr-3.5">۱۲ درخواست جدید</span>
-            </p>
-            <button class="flex justify-center items-center px-2.5 py-1.5 w-48 rounded-md bg-[#128AB2]">
-              <p class="text-xs font-normal text-white">مشاهده پایپلاین</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M6.21444 9.62428C6.00665 9.41649 6.00665 9.0796 6.21444 8.87181L11.5353 3.55098C11.743 3.34319 12.0799 3.34319 12.2877 3.55098C12.4955 3.75878 12.4955 4.09567 12.2877 4.30346L7.34315 9.24805L12.2877 14.1926C12.4955 14.4004 12.4955 14.7373 12.2877 14.9451C12.0799 15.1529 11.743 15.1529 11.5353 14.9451L6.21444 9.62428Z"
-                  fill="white" />
-              </svg>
-            </button>
-          </div>
-          <div>
+            <div></div>
           </div>
         </div>
+        <div class="sm:hidden mt-8 w-full flex items-center justify-center">
+          <img src="./../img/MacBookPro.png" />
+        </div>
+        <div class="sm:w-full w-11/12 sm:mt-24 mb-6 sm:mb-10">
+          <p
+            class="text-base text-right sm:text-3xl font-semibold sm:font-bold sm:mb-4 my-2 text-[#128AB2]"
+          >
+            سامـانه مدیـریـت جذب و استخدام (ATS)
+          </p>
+          <p
+            class="text-xs md:text-base text-justify h-36 overflow-hidden sm:h-auto"
+          >
+            سیستم هوشمند مدیریت فرآیند استخدام یا به اختصار ATS نرم افزاری است
+            که توسط واحد منابع انسانی شرکت ها در طی مراحل استخدام مورد استفاده
+            قرار می گیرد. کارفرمایان هر نمایشگاه به صورت رایگان به این سرویس
+            برای مدریت فرآیند استخدام و جذب خود در طی مدت ۳ ماهه نمایگشاه کار
+            دسترسی خواهند داشت.
+          </p>
+        </div>
       </div>
-      <div class="sm:hidden mt-8 w-full flex items-center justify-center">
-        <img src="./../img/MacBookPro.png">
-      </div>
-      <div class="sm:w-full w-11/12 sm:mt-24 mb-6  sm:mb-10">
-        <p class="text-base text-right sm:text-3xl font-semibold sm:font-bold sm:mb-4 my-2 text-[#128AB2]">سامـانه مدیـریـت جذب و استخدام (ATS)
-        </p>
-        <p class="text-xs text-right md:text-base text-justify h-36 overflow-hidden sm:h-auto">سیستم هوشمند مدیریت فرآیند استخدام یا به اختصار ATS نرم افزاری است که توسط واحد منابع انسانی شرکت ها در طی مراحل استخدام مورد استفاده قرار می گیرد. کارفرمایان هر نمایشگاه به صورت رایگان به این سرویس برای مدریت فرآیند استخدام و جذب خود در طی مدت ۳ ماهه نمایگشاه کار دسترسی خواهند داشت.</p>
-      </div>
-    </div>
 
-    <!-- karjooApp -->
-     <div class="w-full md:w-3/5 md:m-auto mt-40 md:mt-64">
-      <div class="relative bg-[#8F11A6] h-44 md:h-64 rounded-lg flex justify-center items-center">
-        <div class="absolute -top-36 md:-top-44 right-2 md:right-8 w-36 md:w-60">
-          <img src="../img/mobile.png" alt="موبایل" class="w-full h-full object-cover">
-        </div>
-        <div class="hidden md:block absolute  top-4 left-4 w-72 h-44 bg-white shadow-md rounded-lg p-4">
-          <div class="flex items-center justify-between mb-4">
-            <!-- <div class="relative inline-block w-8 mr-2 align-middle select-none transition duration-200 ease-in">
+      <!-- karjooApp -->
+      <div class="w-full md:w-3/5 md:m-auto mt-40 md:mt-64">
+        <div
+          class="relative bg-[#8F11A6] h-44 md:h-64 rounded-lg flex justify-center items-center"
+        >
+          <div
+            class="absolute -top-36 md:-top-44 right-2 md:right-8 w-36 md:w-60"
+          >
+            <img
+              src="../img/mobile.png"
+              alt="موبایل"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="hidden md:block absolute top-4 left-4 w-72 h-44 bg-white shadow-md rounded-lg p-4"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <!-- <div class="relative inline-block w-8 mr-2 align-middle select-none transition duration-200 ease-in">
                 <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer" />
                 <label for="toggle" class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300 cursor-pointer"></label>
               </div> -->
               <p class="text-sm">استفاده از رزومه کارجو پلاس</p>
               <img src="../img/Toggle.svg" />
+            </div>
+            <div class="flex items-center border p-2 rounded-lg mb-6">
+              <img src="../img/pdf.png" alt="pdf icon" class="w-5 h-5 ml-1" />
+              <p class="text-sm ml-auto pt-1">Resume.Karjoo.2024</p>
+              <img src="../img/eye.svg" alt="eye icon" class="w-5 h-5 ml-2" />
+            </div>
+            <button
+              class="w-full px-4 py-2 bg-[#8F11A6] text-white rounded text-sm"
+            >
+              ارسال درخواست
+            </button>
           </div>
-          <div class="flex items-center border p-2 rounded-lg mb-6">
-            <img src="../img/pdf.png" alt="pdf icon" class="w-5 h-5 ml-1">
-            <p class="text-sm ml-auto pt-1">Resume.Karjoo.2024</p>
-            <img src="../img/eye.svg" alt="eye icon" class="w-5 h-5 ml-2">
-          </div>
-          <button class="w-full px-4 py-2 bg-[#8F11A6] text-white rounded text-sm">ارسال درخواست</button>
-        </div>
-        <div class="absolute -top-20 md:top-4 right-40 md:right-[26%]">
-          <div
-            class="w-48 md:w-60 h-56 px-2.5 py-3.5 bg-white rounded-lg shadow border border-neutral-200 flex-col justify-start items-start gap-2.5 inline-flex">
-            <div class="h-9 justify-start items-center gap-2.5 inline-flex">
-              <img class="w-7 h-7" src="../img/azki.png" />
-              <div class="flex-col justify-center items-start gap-0.5 inline-flex">
-                <div class="text-right text-black text-xs font-semibold leading-3">ازکی</div>
-                <div class="text-right text-neutral-700 text-xs font-normal leading-3">سرویس آنلاین بیمه</div>
-              </div>
-            </div>
-            <div class="self-stretch h-24 flex-col justify-start items-start gap-1 flex mt-1">
-              <div
-                class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex">
-                <div class="text-right text-neutral-700 text-xs font-normal leading-3">کارشناس پشتیبانی فنی</div>
-                <div class="w-3 h-3 relative"><img src="../img/chevron-left.svg" /></div>
-              </div>
-              <div
-                class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex">
-                <div class="text-right text-neutral-700 text-xs font-normal leading-3">Devops كارشناس</div>
-                <div class="w-3 h-3 relative"><img src="../img/chevron-left.svg" /></div>
-              </div>
-              <div
-                class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex">
-                <div class="text-right text-neutral-700 text-xs font-normal leading-3">Back-End-Node.Js برنامه نویس</div>
-                <div class="w-3 h-3 relative"><img src="../img/chevron-left.svg" /></div>
-              </div>
-            </div>
-            <div class="w-30 justify-center items-center gap-1.5 inline-flex absolute bottom-3">
-              <div class="text-right text-neutral-700 text-xs font-medium leading-3">نمایش همه موقعیت های شغلی</div>
-              <div class="w-3 h-3 relative"><img src="../img/chevron-down.svg" /></div>
-            </div>
-          </div>
-        </div>
-        <div class="absolute top-4 right-1/2 hidden md:block">
-          <div
-            class="w-60 h-56 px-2.5 py-3.5 bg-white rounded-lg shadow border border-neutral-200 flex-col justify-start items-end gap-2.5 inline-flex">
-            <div class="h-9 justify-start items-center gap-2.5 inline-flex">
-              <img class="w-7 h-7" src="../img/achare.png" />
-              <div class="flex-col justify-center items-start gap-0.5 inline-flex">
-                <div class="text-right text-black text-xs font-semibold leading-3">آچاره</div>
-                <div class="text-right text-neutral-700 text-xs font-normal leading-4">سرویس آنلاین خدمات در منزل</div>
-              </div>
-            </div>
-            <div class="self-stretch h-24 flex-col justify-start items-start gap-1 flex mt-1">
-              <div
-                class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex">
-                <div class="text-right text-neutral-700 text-xs font-normal leading-3">کارشناس پشتیبانی فنی</div>
-                <div class="w-3 h-3 relative"><img src="../img/chevron-left.svg" /></div>
-              </div>
-              <div
-                class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex">
-                <div class="text-right text-neutral-700 text-xs font-normal leading-3">Devops كارشناس</div>
-                <div class="w-3 h-3 relative"><img src="../img/chevron-left.svg" /></div>
-              </div>
-              <div
-                class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex">
-                <div class="text-right text-neutral-700 text-xs font-normal leading-3">Back-End-Node.Js برنامه نویس</div>
-                <div class="w-3 h-3 relative"><img src="../img/chevron-left.svg" /></div>
-              </div>
-            </div>
-            <div class="hidden md:block w-30 justify-center items-center gap-1.5 inline-flex absolute bottom-3">
-              <div class="text-right text-neutral-700 text-xs font-medium leading-3">نمایش همه موقعیت های شغلی</div>
-              <div class="w-3 h-3 relative"><img src="../img/chevron-down.svg" /></div>
-            </div>
-          </div>
-        </div>
-        <div class="hidden md:block absolute -bottom-24 left-4 w-72 h-32 bg-white shadow-md rounded-lg py-4 px-2 flex items-center">
-          <div class="flex justify-between">
-            <div class="flex flex-col items-start justify-between w-full text-xs text-right space-y-1">
-              <div class="flex items-center">
-                <img src="../img/ostadkar.png" class="w-7 h-7" />
-                <p class="pr-1">استادکار</p>
-              </div>
-              <p>کارشناس پشتیبانی فنی (امریه دانش بنیان)</p>
-              <p class="pt-2">تاریخ ارسال درخواست: ۱۴۰۳/۱۱/۰۳</p>
-            </div>
-              <img src="../img/chevron-left.svg" />
-          </div>
-        </div>
-      </div>
-      <div class="mt-9 md:mt-24 px-4 md:px-0">
-        <h2 class="text-base font-medium text-[#8F11A6]"><span class="text-xl md:text-3xl font-bold md:font-extrabold text-[#8F11A6]">وب اپ کارجو</span> (اختصاصی شده برای نمایشگاه)</h2>
-        <p class="text-base font-normal">تمامی موقعیت های شغلی مجموعه های شرکت کننده در این نمایشگاه در لینکی اختصاصی در اختیار کارجویان هدف قرار خواهد گرفت. در این نسخه اختصاصی از وب اپلیکیشن کارجو پلاس فقط موقعیت های شغلی ای موجود است که مربوط به این نمایشگاه کار بوده و سایر موقعیت های شغلی موجود در وب اپ کار در این نسخه قابل مشاهده نیستند. شایان ذکر است این لینک با موقعیت های شغلی موجود در آن تا ۳ ماه پس از ایجاد در دسترس خواهد بود و به صورت هم زمان در وب اپ اصلی کارجو پلاس نیز قابل دسترس می باشد.</p>
-      </div>
-     </div>
-    <!-- ravande ejraii -->
-    <div class="md:w-3/5 m-auto mt-10 md:mt-32 px-2 md:px-0">
-      <h1 class="text-center text-xl font-bold md:text-4xl font-extrabold mb-6 md:mb-16">روند اجرایی نمایشگاه کار قزوین</h1>
-
-        <div id="accordion-nested-parent" data-accordion="collapse" class="grid md:grid-cols-2 grid-cols-1 md:gap-6">
-            <div>
-                
-                        <div
-                            class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset  ring-gray-300 sm:px-5 py-5 px-4 ">
-                            <button class="absolute bottom-5 left-3 toggle-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path d="M16.25 6.875L10 13.125L3.75 6.875" stroke="#403F40" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                            <h2
-                                class="sm:w-full text-right  text-[#403F40]  placeholder:text-[#403F40] text-sm font-normal sm:font-medium">
-                                1.تکمیل فرم پیش ثبت نام</h2>
-                            <p class="pt-4 hidden text-justify text-xs text-[#403F40]">لورم ایپسوم متن
-                                ساختگی با تولید سادگی
-                                نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با تولید
-                                سادگی نامفهوم از
-                                صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم
-                                متن ساختگی با تولید
-                                سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید
-                                سادگی نامفهوم از
-                                صنعت چاپ سادگی نامفهوم از صنعت.</p>
-                        </div>
-                        <div
-                            class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-[#8F11A6] sm:px-5 py-5 px-4 ">
-                            <button class="absolute bottom-15 left-3 toggle-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path d="M3.75 13.125L10 6.875L16.25 13.125" stroke="#8F11A6" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                            <h2
-                                class="sm:w-full  text-[#8F11A6]  placeholder:text-[#403F40] text-sm font-normal sm:font-medium">
-                                2.ورود اطلاعات شرکت به وب اپ نمایشگاه کار</h2>
-                            <p class="pt-4 text-justify text-xs text-[#403F40]">اطـلاعـات شــرکــت شـــامــل نــام، حـــوزه فـعــالـیـــت، اطـلــاعـــات تماس و مـحــل غـرفـه با قابلیت جـستــجــو و فـیـلـتـر به وب اپ نمایـشــگـاه کــار وارد مـی شــود.
-                          </p>
-                        </div>
-                        <div
-                            class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset  ring-gray-300 sm:px-5 py-5 px-4 ">
-                            <button class="absolute bottom-5 left-3 toggle-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path d="M16.25 6.875L10 13.125L3.75 6.875" stroke="#403F40" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                            <h2
-                                class="sm:w-full text-right  text-[#403F40]  placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium">
-                                3.دسترسی شرکت به داشبورد مدیریت استخدام</h2>
-                            <p class="pt-4 hidden text-justify text-xs sm:text-base text-[#403F40]">لورم ایپسوم متن
-                                ساختگی با تولید سادگی
-                                نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با تولید
-                                سادگی نامفهوم از
-                                صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم
-                                متن ساختگی با تولید
-                                سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید
-                                سادگی نامفهوم از
-                                صنعت چاپ سادگی نامفهوم از صنعت.</p>
-                        </div>
-                        <div
-                            class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset  ring-gray-300 sm:px-5 py-5 px-4 ">
-                            <button class="absolute bottom-5 left-3 toggle-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path d="M16.25 6.875L10 13.125L3.75 6.875" stroke="#403F40" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                            <h2
-                                class="sm:w-full text-right  text-[#403F40]  placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium">
-                                4.ساخت آگهی استخدام در داشبورد مدیریت استخدام</h2>
-                            <p class="pt-4 hidden text-justify text-xs sm:text-base text-[#403F40]">لورم ایپسوم متن
-                                ساختگی با تولید سادگی
-                                نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با تولید
-                                سادگی نامفهوم از
-                                صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم
-                                متن ساختگی با تولید
-                                سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید
-                                سادگی نامفهوم از
-                                صنعت چاپ سادگی نامفهوم از صنعت.</p>
-                        </div>
-                        <div
-                            class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset  ring-gray-300 sm:px-5 py-5 px-4 ">
-                            <button class="absolute bottom-5 left-3 toggle-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path d="M16.25 6.875L10 13.125L3.75 6.875" stroke="#403F40" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                            <h2
-                                class="sm:w-full text-right  text-[#403F40]  placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium">
-                                5.ساخت صفحه اختصاصی معرفی شرکت</h2>
-                            <p class="pt-4 hidden text-justify text-xs sm:text-base text-[#403F40]">لورم ایپسوم متن
-                                ساختگی با تولید سادگی
-                                نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با تولید
-                                سادگی نامفهوم از
-                                صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم
-                                متن ساختگی با تولید
-                                سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید
-                                سادگی نامفهوم از
-                                صنعت چاپ سادگی نامفهوم از صنعت.</p>
-                        </div>
-                        
-                    </div>
-             <div>
-                      <div
-                        class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset  ring-gray-300 sm:px-5 py-5 px-4 ">
-                        <button class="absolute bottom-5 left-3 toggle-btn">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M16.25 6.875L10 13.125L3.75 6.875" stroke="#403F40" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </button>
-                        <h2
-                          class="sm:w-full text-right  text-[#403F40]  placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium">
-                          6.انتشار آگهی استخدام در وب اپ نمایشگاه کار</h2>
-                        <p class="pt-4 hidden text-justify text-xs sm:text-base text-[#403F40]">لورم ایپسوم متن ساختگی با تولید سادگی
-                          نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                          صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید
-                          سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                          صنعت چاپ سادگی نامفهوم از صنعت.</p>
-                      </div>
-                      <div
-                        class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-[#8F11A6] sm:px-5 py-5 px-4 ">
-                        <button class="absolute bottom-15 left-3 toggle-btn">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M3.75 13.125L10 6.875L16.25 13.125" stroke="#8F11A6" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </button>
-                        <h2
-                          class="sm:w-full  text-[#8F11A6]  placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium">
-                          7.انتشار آگهی استخدام در دانشگاه های معتبر</h2>
-                        <p class="pt-4 text-justify text-xs sm:text-base text-[#403F40]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                          از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                          و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی
-                          نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                          سادگی نامفهوم از صنعت.</p>
-                      </div>
-                      <div
-                        class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset  ring-gray-300 sm:px-5 py-5 px-4 ">
-                        <button class="absolute bottom-5 left-3 toggle-btn">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M16.25 6.875L10 13.125L3.75 6.875" stroke="#403F40" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </button>
-                        <h2
-                          class="sm:w-full text-right  text-[#403F40]  placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium">
-                          8.دریافت رزومه در داشبورد مدیریت استخدام</h2>
-                        <p class="pt-4 hidden text-justify text-xs sm:text-base text-[#403F40]">لورم ایپسوم متن ساختگی با تولید سادگی
-                          نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                          صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید
-                          سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                          صنعت چاپ سادگی نامفهوم از صنعت.</p>
-                      </div>
-                      <div
-                        class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset  ring-gray-300 sm:px-5 py-5 px-4 ">
-                        <button class="absolute bottom-5 left-3 toggle-btn">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M16.25 6.875L10 13.125L3.75 6.875" stroke="#403F40" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </button>
-                        <h2
-                          class="sm:w-full text-right  text-[#403F40]  placeholder:text-[#403F40] text-sm font-normal">
-                          9.مدیریت فرآیند استخدام به صورت آنلاین</h2>
-                        <p class="pt-4 hidden text-justify text-xs text-[#403F40]">لورم ایپسوم متن ساختگی با تولید سادگی
-                          نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                          صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید
-                          سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                          صنعت چاپ سادگی نامفهوم از صنعت.</p>
-                      </div>
-                      <div
-                        class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset  ring-gray-300 sm:px-5 py-5 px-4 ">
-                        <button class="absolute bottom-5 left-3 toggle-btn">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M16.25 6.875L10 13.125L3.75 6.875" stroke="#403F40" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </button>
-                        <h2
-                          class="sm:w-full text-right  text-[#403F40]  placeholder:text-[#403F40] text-sm font-normal sm:font-medium">
-                          10.پایان نمایشگاه و انتشار گزارش نهایی</h2>
-                        <p class="pt-4 hidden text-justify text-xs text-[#403F40]">لورم ایپسوم متن ساختگی با تولید سادگی
-                          نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                          صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید
-                          سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                          صنعت چاپ سادگی نامفهوم از صنعت.</p>
-                      </div>
-                    
-                    </div>
+          <div class="absolute -top-20 md:top-4 right-40 md:right-[26%]">
+            <div
+              class="w-48 md:w-60 h-56 px-2.5 py-3.5 bg-white rounded-lg shadow border border-neutral-200 flex-col justify-start items-start gap-2.5 inline-flex"
+            >
+              <div class="h-9 justify-start items-center gap-2.5 inline-flex">
+                <img class="w-7 h-7" src="../img/azki.png" />
+                <div
+                  class="flex-col justify-center items-start gap-0.5 inline-flex"
+                >
+                  <div
+                    class="text-right text-black text-xs font-semibold leading-3"
+                  >
+                    ازکی
+                  </div>
+                  <div
+                    class="text-right text-neutral-700 text-xs font-normal leading-3"
+                  >
+                    سرویس آنلاین بیمه
+                  </div>
                 </div>
-                
               </div>
+              <div
+                class="self-stretch h-24 flex-col justify-start items-start gap-1 flex mt-1"
+              >
+                <div
+                  class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex"
+                >
+                  <div
+                    class="text-right text-neutral-700 text-xs font-normal leading-3"
+                  >
+                    کارشناس پشتیبانی فنی
+                  </div>
+                  <div class="w-3 h-3 relative">
+                    <img src="../img/chevron-left.svg" />
+                  </div>
+                </div>
+                <div
+                  class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex"
+                >
+                  <div
+                    class="text-right text-neutral-700 text-xs font-normal leading-3"
+                  >
+                    Devops كارشناس
+                  </div>
+                  <div class="w-3 h-3 relative">
+                    <img src="../img/chevron-left.svg" />
+                  </div>
+                </div>
+                <div
+                  class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex"
+                >
+                  <div
+                    class="text-right text-neutral-700 text-xs font-normal leading-3"
+                  >
+                    Back-End-Node.Js برنامه نویس
+                  </div>
+                  <div class="w-3 h-3 relative">
+                    <img src="../img/chevron-left.svg" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-30 justify-center items-center gap-1.5 inline-flex absolute bottom-3"
+              >
+                <div
+                  class="text-right text-neutral-700 text-xs font-medium leading-3"
+                >
+                  نمایش همه موقعیت های شغلی
+                </div>
+                <div class="w-3 h-3 relative">
+                  <img src="../img/chevron-down.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute top-4 right-1/2 hidden md:block">
+            <div
+              class="w-60 h-56 px-2.5 py-3.5 bg-white rounded-lg shadow border border-neutral-200 flex-col justify-start items-end gap-2.5 inline-flex"
+            >
+              <div class="h-9 justify-start items-center gap-2.5 inline-flex">
+                <img class="w-7 h-7" src="../img/achare.png" />
+                <div
+                  class="flex-col justify-center items-start gap-0.5 inline-flex"
+                >
+                  <div
+                    class="text-right text-black text-xs font-semibold leading-3"
+                  >
+                    آچاره
+                  </div>
+                  <div
+                    class="text-right text-neutral-700 text-xs font-normal leading-4"
+                  >
+                    سرویس آنلاین خدمات در منزل
+                  </div>
+                </div>
+              </div>
+              <div
+                class="self-stretch h-24 flex-col justify-start items-start gap-1 flex mt-1"
+              >
+                <div
+                  class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex"
+                >
+                  <div
+                    class="text-right text-neutral-700 text-xs font-normal leading-3"
+                  >
+                    کارشناس پشتیبانی فنی
+                  </div>
+                  <div class="w-3 h-3 relative">
+                    <img src="../img/chevron-left.svg" />
+                  </div>
+                </div>
+                <div
+                  class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex"
+                >
+                  <div
+                    class="text-right text-neutral-700 text-xs font-normal leading-3"
+                  >
+                    Devops كارشناس
+                  </div>
+                  <div class="w-3 h-3 relative">
+                    <img src="../img/chevron-left.svg" />
+                  </div>
+                </div>
+                <div
+                  class="self-stretch p-2.5 rounded-md border border-neutral-200 justify-between items-center inline-flex"
+                >
+                  <div
+                    class="text-right text-neutral-700 text-xs font-normal leading-3"
+                  >
+                    Back-End-Node.Js برنامه نویس
+                  </div>
+                  <div class="w-3 h-3 relative">
+                    <img src="../img/chevron-left.svg" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="md:block w-30 justify-center items-center gap-1.5 inline-flex absolute bottom-3"
+              >
+                <div
+                  class="text-right text-neutral-700 text-xs font-medium leading-3"
+                >
+                  نمایش همه موقعیت های شغلی
+                </div>
+                <div class="w-3 h-3 relative">
+                  <img src="../img/chevron-down.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden md:block absolute -bottom-24 left-4 w-72 h-32 bg-white shadow-md rounded-lg py-4 px-2 items-center"
+          >
+            <div class="flex justify-between">
+              <div
+                class="flex flex-col items-start justify-between w-full text-xs text-right space-y-1"
+              >
+                <div class="flex items-center">
+                  <img src="../img/ostadkar.png" class="w-7 h-7" />
+                  <p class="pr-1">استادکار</p>
+                </div>
+                <p>کارشناس پشتیبانی فنی (امریه دانش بنیان)</p>
+                <p class="pt-2">تاریخ ارسال درخواست: ۱۴۰۳/۱۱/۰۳</p>
+              </div>
+              <img src="../img/chevron-left.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="mt-9 md:mt-24 px-4 md:px-0">
+          <h2 class="text-base font-medium text-[#8F11A6]">
+            <span
+              class="text-xl md:text-3xl font-bold md:font-extrabold text-[#8F11A6]"
+              >وب اپ کارجو</span
+            >
+            (اختصاصی شده برای نمایشگاه)
+          </h2>
+          <p class="text-base font-normal">
+            تمامی موقعیت های شغلی مجموعه های شرکت کننده در این نمایشگاه در لینکی
+            اختصاصی در اختیار کارجویان هدف قرار خواهد گرفت. در این نسخه اختصاصی
+            از وب اپلیکیشن کارجو پلاس فقط موقعیت های شغلی ای موجود است که مربوط
+            به این نمایشگاه کار بوده و سایر موقعیت های شغلی موجود در وب اپ کار
+            در این نسخه قابل مشاهده نیستند. شایان ذکر است این لینک با موقعیت های
+            شغلی موجود در آن تا ۳ ماه پس از ایجاد در دسترس خواهد بود و به صورت
+            هم زمان در وب اپ اصلی کارجو پلاس نیز قابل دسترس می باشد.
+          </p>
+        </div>
+      </div>
+      <!-- ravande ejraii -->
+      <div class="md:w-3/5 m-auto mt-10 md:mt-32 px-2 md:px-0">
+        <h1
+          class="text-center text-xl md:text-4xl font-extrabold mb-6 md:mb-16"
+        >
+          روند اجرایی نمایشگاه کار قزوین
+        </h1>
 
-<!-- hamian -->
-<div class="container mx-auto px-4 py-8 md:max-w-6xl mt-10 md:mt-32">
-  <h1 class="text-center text-xl font-bold md:text-4xl md:font-extrabold mb-6 md:mb-16">حامیـان نمـایشـگـاه کـار</h1>
-  <div class="flex justify-between items-center overflow-x-auto no-scrollbar whitespace-nowrap">
-    <img src="../img/jahad.png" alt="Jahad" class="md:w-32 md:h-32 w-24 h-24 md:mx-4">
-    <img src="../img/daneshgahazad.png" alt="Daneshgah-Azad" class="md:w-32 md:h-32 w-24 h-24 mx-4">
-    <img src="../img/daneshgah.png" alt="Daneshgah-Imam-khomeini" class="md:w-32 md:h-32 w-24 h-24 mx-4">
-    <img src="../img/park.png" alt="Park-elmo-fanavary" class="md:w-32 md:h-32 w-24 h-24 mx-4">
-    <img src="../img/kanoon.png" alt="Kanoon-karfarmayan" class="md:w-32 md:h-32 w-24 h-24 mx-4">
-   
-  </div>
-</div>
+        <div
+          id="accordion-nested-parent"
+          data-accordion="collapse"
+          class="grid md:grid-cols-2 grid-cols-1 md:gap-6"
+        >
+          <div>
+            <div
+              class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-gray-300 sm:px-5 py-5 px-4"
+            >
+              <button class="absolute bottom-5 left-3 toggle-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.25 6.875L10 13.125L3.75 6.875"
+                    stroke="#403F40"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <h2
+                class="sm:w-full text-right text-[#403F40] placeholder:text-[#403F40] text-sm font-normal sm:font-medium"
+              >
+                1.تکمیل فرم پیش ثبت نام
+              </h2>
+              <p class="pt-4 hidden text-justify text-xs text-[#403F40]">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                سادگی نامفهوم از صنعت.
+              </p>
+            </div>
+            <div
+              class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-[#8F11A6] sm:px-5 py-5 px-4"
+            >
+              <button class="absolute bottom-15 left-3 toggle-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M3.75 13.125L10 6.875L16.25 13.125"
+                    stroke="#8F11A6"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <h2
+                class="sm:w-full text-[#8F11A6] placeholder:text-[#403F40] text-sm font-normal sm:font-medium"
+              >
+                2.ورود اطلاعات شرکت به وب اپ نمایشگاه کار
+              </h2>
+              <p class="pt-4 text-justify text-xs text-[#403F40]">
+                اطـلاعـات شــرکــت شـــامــل نــام، حـــوزه فـعــالـیـــت،
+                اطـلــاعـــات تماس و مـحــل غـرفـه با قابلیت جـستــجــو و
+                فـیـلـتـر به وب اپ نمایـشــگـاه کــار وارد مـی شــود.
+              </p>
+            </div>
+            <div
+              class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-gray-300 sm:px-5 py-5 px-4"
+            >
+              <button class="absolute bottom-5 left-3 toggle-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.25 6.875L10 13.125L3.75 6.875"
+                    stroke="#403F40"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <h2
+                class="sm:w-full text-right text-[#403F40] placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium"
+              >
+                3.دسترسی شرکت به داشبورد مدیریت استخدام
+              </h2>
+              <p
+                class="pt-4 hidden text-justify text-xs sm:text-base text-[#403F40]"
+              >
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                سادگی نامفهوم از صنعت.
+              </p>
+            </div>
+            <div
+              class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-gray-300 sm:px-5 py-5 px-4"
+            >
+              <button class="absolute bottom-5 left-3 toggle-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.25 6.875L10 13.125L3.75 6.875"
+                    stroke="#403F40"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <h2
+                class="sm:w-full text-right text-[#403F40] placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium"
+              >
+                4.ساخت آگهی استخدام در داشبورد مدیریت استخدام
+              </h2>
+              <p
+                class="pt-4 hidden text-justify text-xs sm:text-base text-[#403F40]"
+              >
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                سادگی نامفهوم از صنعت.
+              </p>
+            </div>
+            <div
+              class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-gray-300 sm:px-5 py-5 px-4"
+            >
+              <button class="absolute bottom-5 left-3 toggle-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.25 6.875L10 13.125L3.75 6.875"
+                    stroke="#403F40"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <h2
+                class="sm:w-full text-right text-[#403F40] placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium"
+              >
+                5.ساخت صفحه اختصاصی معرفی شرکت
+              </h2>
+              <p
+                class="pt-4 hidden text-justify text-xs sm:text-base text-[#403F40]"
+              >
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                سادگی نامفهوم از صنعت.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-gray-300 sm:px-5 py-5 px-4"
+            >
+              <button class="absolute bottom-5 left-3 toggle-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.25 6.875L10 13.125L3.75 6.875"
+                    stroke="#403F40"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <h2
+                class="sm:w-full text-right text-[#403F40] placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium"
+              >
+                6.انتشار آگهی استخدام در وب اپ نمایشگاه کار
+              </h2>
+              <p
+                class="pt-4 hidden text-justify text-xs sm:text-base text-[#403F40]"
+              >
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                سادگی نامفهوم از صنعت.
+              </p>
+            </div>
+            <div
+              class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-[#8F11A6] sm:px-5 py-5 px-4"
+            >
+              <button class="absolute bottom-15 left-3 toggle-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M3.75 13.125L10 6.875L16.25 13.125"
+                    stroke="#8F11A6"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <h2
+                class="sm:w-full text-[#8F11A6] placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium"
+              >
+                7.انتشار آگهی استخدام در دانشگاه های معتبر
+              </h2>
+              <p class="pt-4 text-justify text-xs sm:text-base text-[#403F40]">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                سادگی نامفهوم از صنعت.
+              </p>
+            </div>
+            <div
+              class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-gray-300 sm:px-5 py-5 px-4"
+            >
+              <button class="absolute bottom-5 left-3 toggle-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.25 6.875L10 13.125L3.75 6.875"
+                    stroke="#403F40"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <h2
+                class="sm:w-full text-right text-[#403F40] placeholder:text-[#403F40] text-sm sm:text-base font-normal sm:font-medium"
+              >
+                8.دریافت رزومه در داشبورد مدیریت استخدام
+              </h2>
+              <p
+                class="pt-4 hidden text-justify text-xs sm:text-base text-[#403F40]"
+              >
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                سادگی نامفهوم از صنعت.
+              </p>
+            </div>
+            <div
+              class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-gray-300 sm:px-5 py-5 px-4"
+            >
+              <button class="absolute bottom-5 left-3 toggle-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.25 6.875L10 13.125L3.75 6.875"
+                    stroke="#403F40"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <h2
+                class="sm:w-full text-right text-[#403F40] placeholder:text-[#403F40] text-sm font-normal"
+              >
+                9.مدیریت فرآیند استخدام به صورت آنلاین
+              </h2>
+              <p class="pt-4 hidden text-justify text-xs text-[#403F40]">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                سادگی نامفهوم از صنعت.
+              </p>
+            </div>
+            <div
+              class="faq-item relative my-4 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-gray-300 sm:px-5 py-5 px-4"
+            >
+              <button class="absolute bottom-5 left-3 toggle-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.25 6.875L10 13.125L3.75 6.875"
+                    stroke="#403F40"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <h2
+                class="sm:w-full text-right text-[#403F40] placeholder:text-[#403F40] text-sm font-normal sm:font-medium"
+              >
+                10.پایان نمایشگاه و انتشار گزارش نهایی
+              </h2>
+              <p class="pt-4 hidden text-justify text-xs text-[#403F40]">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید لورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و بالورم ایپسوم متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ سادگی نامفهوم از صنعت چاپ، و
+                بالورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                سادگی نامفهوم از صنعت.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<!-- features -->
-<div class="md:w-3/5 md:mx-auto mt-10 md:mt-32">
-      <h1 class="text-center text-xl font-bold md:text-4xl md:font-extrabold mb-20 md:mb-28 ">ویژگی های نمایشگاه کار قزوین</h1>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-32">
-      <div class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0">
-          <div class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24">
-              <img src="../img/features1.svg" class="absolute left-3.5 top-3.5" />
-          </div>
-          <div class=" m-auto">
-              <h2 class="text-center text-lg font-bold text-[#8F11A6]">دســتــرســـی بـه اســتـعــدادهـا</h2>
-              <p class="text-center text-sm font-normal text-slate-500 text-center md:text-right md:px-6">
-                  دسترسی نامحدود به رزومه های دریافت شده در نمـایشگـاه و تمـاس مستـقـیـم با کــانــدیـــدهـــای
-                  بــالــقـــــوه اســتــخـــدام
-              </p>
-          </div>
+      <!-- hamian -->
+      <div class="container mx-auto px-4 py-8 md:max-w-6xl mt-10 md:mt-32">
+        <h1
+          class="text-center text-xl font-bold md:text-4xl md:font-extrabold mb-6 md:mb-16"
+        >
+          حامیـان نمـایشـگـاه کـار
+        </h1>
+        <div
+          class="flex justify-between items-center overflow-x-auto no-scrollbar whitespace-nowrap"
+        >
+          <img
+            src="../img/jahad.png"
+            alt="Jahad"
+            class="md:w-32 md:h-32 w-24 h-24 md:mx-4"
+          />
+          <img
+            src="../img/daneshgahazad.png"
+            alt="Daneshgah-Azad"
+            class="md:w-32 md:h-32 w-24 h-24 mx-4"
+          />
+          <img
+            src="../img/daneshgah.png"
+            alt="Daneshgah-Imam-khomeini"
+            class="md:w-32 md:h-32 w-24 h-24 mx-4"
+          />
+          <img
+            src="../img/park.png"
+            alt="Park-elmo-fanavary"
+            class="md:w-32 md:h-32 w-24 h-24 mx-4"
+          />
+          <img
+            src="../img/kanoon.png"
+            alt="Kanoon-karfarmayan"
+            class="md:w-32 md:h-32 w-24 h-24 mx-4"
+          />
+        </div>
       </div>
-      <div class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0">
-          <div class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24">
-              <img src="../img/features2.svg" class="absolute left-3.5 top-3.5" />
-    
-          </div>
-          <div class=" m-auto">
-              <h2 class="text-center text-lg font-bold text-[#8F11A6]">بـازدیــد مـسـئــولـیــن مـــرتــبــط</h2>
-              <p class="text-center text-sm font-normal text-slate-500 text-center md:text-right px-6">ایـــجــــاد امــکـــان تــعـــامـــــل و
-                  ارتــبـــاط مستقیم با مسئولیـن
-                  مــرتــبـط حـاضـر در نمــایـشـگـاه</p>
-          </div>
-      </div>
-      <div class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0">
-          <div class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24">
-    
-              <img src="../img/features3.svg" class="absolute left-3.5 top-3.5" />
-          </div>
-          <div class=" m-auto">
-              <h2 class="text-center text-lg font-bold text-[#8F11A6]">رقــابــت بـــــرنــد کـــارفـــرمــایــی</h2>
-              <p class="text-center text-sm font-normal text-slate-500 text-center md:text-right px-6">
-                  حـضــور پــررنــگ در آوردگــــاه تـخـصـصـی صـنـعـت و جــذب اسـتـعـداد هـا در بـرابـر سایــر
-                  رقــبـــا
-              </p>
-          </div>
-      </div>
-      <div class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0">
-          <div class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24">
-    
-              <img src="../img/features2.svg" class="absolute left-3.5 top-3.5" />
-          </div>
-          <div class=" m-auto">
-              <h2 class="text-center text-lg font-bold text-[#8F11A6] ">تعامل با مراکز آمـوزشـی استـان</h2>
-              <p class="text-center text-sm font-normal text-slate-500 text-center md:text-right px-6">
-                  حضـور پررنگ مـراکز آمـوزشی بـرتـر استـان در نمایشگاه کار قـزوین و امـکان بـرقـراری ارتـبـاط با
-                  فــارغ التـحـصـیـلان ایـن مــراکــز
-              </p>
-          </div>
-      </div>
-      <div class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0">
-          <div class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24">
-    
-              <img src="../img/features5.svg" class="absolute left-3.5 top-3.5" />
-          </div>
-          <div class=" m-auto">
-              <h2 class="text-center text-lg font-bold text-[#8F11A6] ">تسهیلات آموزشی پرسنل تا 80%</h2>
-              <p class="text-center text-sm font-normal text-slate-500  text-center md:text-right px-6">
-                  امـکـــان ثـبــت نــام و دریــافــت دوره هـای آمـوزشــی مختلف برای پـرسنـل با تخـفـیـف هــای ویــژه
-                  در نــمــایـشـگـاه کـــار قــزویــن
-              </p>
-          </div>
-      </div>
-      <div class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0">
-          <div class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24">
-    
-              <img src="../img/features6.svg" class="absolute left-3.5 top-3.5" />
-          </div>
-          <div class=" m-auto">
-              <h2 class="text-center text-lg font-bold text-[#8F11A6]">ارتباط مـسـتـقـیـم با کـارجـویـان</h2>
-              <p class="text-center text-sm font-normal text-slate-500  text-center md:text-right px-6">
-                  امکان تعـامـل مـسـتـقـیـم با کـارجـویـان و ارزیـابـی اولـیـه با هـزیـنـه پاییـن تـر بـرای شرکت
-                  کنندگان
-              </p>
-          </div>
-      </div>
-    </div>
-  <div class="mt-10 md:mt-32 mb-4">
-      <img src="../img/broshoor.png" class="px-4 md:px-0"/>
-  </div>
-</div>
-  </main>
-  <!--exhibitions-section-->
 
+      <!-- features -->
+      <div class="md:w-3/5 md:mx-auto mt-10 md:mt-32">
+        <h1
+          class="text-center text-xl font-bold md:text-4xl md:font-extrabold mb-20 md:mb-28"
+        >
+          ویژگی های نمایشگاه کار قزوین
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-32">
+          <div
+            class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0"
+          >
+            <div
+              class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24"
+            >
+              <img
+                src="../img/features1.svg"
+                class="absolute left-3.5 top-3.5"
+              />
+            </div>
+            <div class="m-auto">
+              <h2 class="text-center text-lg font-bold text-[#8F11A6]">
+                دســتــرســـی بـه اســتـعــدادهـا
+              </h2>
+              <p
+                class="text-sm font-normal text-slate-500 text-center md:text-right md:px-6"
+              >
+                دسترسی نامحدود به رزومه های دریافت شده در نمـایشگـاه و تمـاس
+                مستـقـیـم با کــانــدیـــدهـــای بــالــقـــــوه اســتــخـــدام
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0"
+          >
+            <div
+              class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24"
+            >
+              <img
+                src="../img/features2.svg"
+                class="absolute left-3.5 top-3.5"
+              />
+            </div>
+            <div class="m-auto">
+              <h2 class="text-center text-lg font-bold text-[#8F11A6]">
+                بـازدیــد مـسـئــولـیــن مـــرتــبــط
+              </h2>
+              <p
+                class="text-sm font-normal text-slate-500 text-center md:text-right px-6"
+              >
+                ایـــجــــاد امــکـــان تــعـــامـــــل و ارتــبـــاط مستقیم با
+                مسئولیـن مــرتــبـط حـاضـر در نمــایـشـگـاه
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0"
+          >
+            <div
+              class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24"
+            >
+              <img
+                src="../img/features3.svg"
+                class="absolute left-3.5 top-3.5"
+              />
+            </div>
+            <div class="m-auto">
+              <h2 class="text-center text-lg font-bold text-[#8F11A6]">
+                رقــابــت بـــــرنــد کـــارفـــرمــایــی
+              </h2>
+              <p
+                class="text-sm font-normal text-slate-500 text-center md:text-right px-6"
+              >
+                حـضــور پــررنــگ در آوردگــــاه تـخـصـصـی صـنـعـت و جــذب
+                اسـتـعـداد هـا در بـرابـر سایــر رقــبـــا
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0"
+          >
+            <div
+              class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24"
+            >
+              <img
+                src="../img/features2.svg"
+                class="absolute left-3.5 top-3.5"
+              />
+            </div>
+            <div class="m-auto">
+              <h2 class="text-center text-lg font-bold text-[#8F11A6]">
+                تعامل با مراکز آمـوزشـی استـان
+              </h2>
+              <p
+                class="text-sm font-normal text-slate-500 text-center md:text-right px-6"
+              >
+                حضـور پررنگ مـراکز آمـوزشی بـرتـر استـان در نمایشگاه کار قـزوین
+                و امـکان بـرقـراری ارتـبـاط با فــارغ التـحـصـیـلان ایـن
+                مــراکــز
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0"
+          >
+            <div
+              class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24"
+            >
+              <img
+                src="../img/features5.svg"
+                class="absolute left-3.5 top-3.5"
+              />
+            </div>
+            <div class="m-auto">
+              <h2 class="text-center text-lg font-bold text-[#8F11A6]">
+                تسهیلات آموزشی پرسنل تا 80%
+              </h2>
+              <p
+                class="text-sm font-normal text-slate-500 text-center md:text-right px-6"
+              >
+                امـکـــان ثـبــت نــام و دریــافــت دوره هـای آمـوزشــی مختلف
+                برای پـرسنـل با تخـفـیـف هــای ویــژه در نــمــایـشـگـاه کـــار
+                قــزویــن
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-72 h-52 relative flex flex-col justify-center items-center border border-inherit rounded-br-3xl mx-auto md:mx-0"
+          >
+            <div
+              class="absolute right-24 md:-right-14 -top-16 rounded-full bg-slate-100 w-24 h-24"
+            >
+              <img
+                src="../img/features6.svg"
+                class="absolute left-3.5 top-3.5"
+              />
+            </div>
+            <div class="m-auto">
+              <h2 class="text-center text-lg font-bold text-[#8F11A6]">
+                ارتباط مـسـتـقـیـم با کـارجـویـان
+              </h2>
+              <p
+                class="text-sm font-normal text-slate-500 text-center md:text-right px-6"
+              >
+                امکان تعـامـل مـسـتـقـیـم با کـارجـویـان و ارزیـابـی اولـیـه با
+                هـزیـنـه پاییـن تـر بـرای شرکت کنندگان
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 md:mt-32 mb-4">
+          <img src="../img/broshoor.png" class="px-4 md:px-0" />
+        </div>
+      </div>
+    </main>
+    <!--exhibitions-section-->
 
-  <script src="./js/navbar.js"></script>
-  <script src="./js/soalat.js"></script>
-  <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
-</body>
-
+    <script src="./js/navbar.js"></script>
+    <script src="./js/soalat.js"></script>
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+  </body>
 </html>
