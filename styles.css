@@ -96,8 +96,8 @@
 }
 
 body {
+  margin: 0;
   background-color: #fafafa;
-  max-width: 1920px;
   background-color: #fafafa;
   width: 100%;
 }
